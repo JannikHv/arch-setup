@@ -5,21 +5,17 @@ if [[ $EUID -eq 0 ]]; then
         exit 1
 fi
 
-# Remove existing files if they exist
-[[ -f ~/.bashrc                 ]] && sudo rm -f ~/.bashrc
-[[ -f /etc/bash.bashrc          ]] && sudo rm -f /etc/bash.bashrc
-[[ -f /usr/local/bin/msc        ]] && sudo rm -f /usr/local/bin/msc
-[[ -f /usr/local/bin/autoremove ]] && sudo rm -f /usr/local/bin/autoremove
-[[ -f /usr/local/bin/mkcfile    ]] && sudo rm -f /usr/local/bin/mkcfile
-[[ -f /usr/local/bin/jtk        ]] && sudo rm -f /usr/local/bin/jtk
+bin_dir="/usr/local/bin"
 
-# Copy files
-     install -Dm 0644 bashrc ~/.bashrc
-sudo install -Dm 0644 bashrc /etc/bash.bashrc
+sudo rm -f "${bin_dir}/"{msc,autoremove,mkcfile,jtk}
+sudo rm -f "/etc/bash.bashrc" "${HOME}/.bashrc"
 
-sudo ln -s ~/Dropbox/Tools/msc                        /usr/local/bin/msc
-sudo ln -s ~/Dropbox/Tools/autoremove                 /usr/local/bin/autoremove
-sudo ln -s ~/Dropbox/Tools/mkcfile.py                 /usr/local/bin/mkcfile
-sudo ln -s ~/Dropbox/Code/Project/git/jtoolkit/jtk.sh /usr/local/bin/jtk
+sudo ln -s "$(pwd)/tools/msc.sh"        "${bin_dir}/msc"
+sudo ln -s "$(pwd)/tools/autoremove.sh" "${bin_dir}/autoremove"
+sudo ln -s "$(pwd)/tools/mkcfile.py"    "${bin_dir}/mkcfile"
+sudo ln -s "$(pwd)/tools/jtk.sh"        "${bin_dir}/jtk"
+
+cp "config/bashrc" "${HOME}/.bashrc"
+sudo cp "config/bashrc" "/etc/bash.bashrc"
 
 echo "Done"
