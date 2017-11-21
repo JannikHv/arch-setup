@@ -54,10 +54,10 @@ if [[ -z "${arg_disk}" ||
     exit 1
 fi
 
-curl https://raw.githubusercontent.com/JannikHv/my-arch/master/disk.sh > disk.sh
+curl https://raw.githubusercontent.com/JannikHv/arch-setup/master/sys/install/disk.sh > disk.sh
 sh disk.sh "${arg_disk}"
 
-curl https://raw.githubusercontent.com/JannikHv/my-arch/master/config.sh > /mnt/root/config.sh
+curl https://raw.githubusercontent.com/JannikHv/arch-setup/master/sys/install/config.sh > /mnt/root/config.sh
 chmod +x /mnt/root/config.sh
 
 arch-chroot /mnt /root/config.sh -d "${arg_disk}" \
