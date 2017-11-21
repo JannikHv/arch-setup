@@ -5,7 +5,7 @@ output=""
 function check_datetime() {
     local format="+%d.%m.%Y %H:%M:%S"
 
-    output+=" $(date "${format}")"
+    output+="  $(date "${format}")"
 }
 
 check_datetime

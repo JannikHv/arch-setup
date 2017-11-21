@@ -7,14 +7,14 @@ function check_mount() {
 
     for i in $(ls /dev/sd* | sed '/sda/d'); do
         if mount | grep -q "${i}"; then
-            output+=""
+            output+=" "
             return
         else
             found=true
         fi
     done
 
-    $found && output+="" || exit 0
+    $found && output+=" " || exit 0
 }
 
 check_mount

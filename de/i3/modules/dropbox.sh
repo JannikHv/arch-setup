@@ -10,17 +10,17 @@ function check_dropbox() {
     local updown=$(dropbox-cli status | sed -n '2p' | awk '{print $1}')
 
     if [[ "${status}" == "Up" ]]; then
-        output+=""
+        output+=" "
     elif [[ "${status}" == *"Syncing"* ]]; then
         if [[ "${updown}" == "Indexing" || "${updown}" == "Uploading" ]]; then
-            output+=""
+            output+=" "
         elif [[ "${updown}" == "Downloading" ]]; then
-            output+=""
+            output+=" "
         else
-            output+=""
+            output+=" "
         fi
     else
-        output+=""
+        output+=" "
     fi
 }
 

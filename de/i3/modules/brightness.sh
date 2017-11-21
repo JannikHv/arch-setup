@@ -9,7 +9,7 @@ function check_brightness() {
     local raw=$(xbacklight)
     local percent=$(echo ${raw} | cut -f1 -d ".")
 
-    output+=" "
+    output+="  "
     output+="${percent}%"
 }
 

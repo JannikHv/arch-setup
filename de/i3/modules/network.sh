@@ -8,7 +8,7 @@ function check_network() {
 
     # Check if offline
     if [[ ! -d "/sys/class/net/${device}" || -z ${device} ]]; then
-        output+=""
+        output+=" "
         return
     fi
 
