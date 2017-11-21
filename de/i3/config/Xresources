@@ -1,5 +1,4 @@
 ! rofi settings
-
 rofi.color-enabled:     true
 rofi.color-window:      #FFFFFF,#FFFFFF
 rofi.color-normal:      #FFFFFF,#000000,#FFFFFF,#555555,#00ff00
@@ -10,3 +9,11 @@ rofi.columns:           1
 rofi.lines:             7
 rofi.font:              opensans regular 14
 rofi.hide-scrollbar:    true
+
+! font settings
+Xft.autohint:   0
+Xft.lcdfilter:  lcddefault
+Xft.Hintstyle:  hintslight
+Xft.hinting:    1
+Xft.antialias:  1
+Xft.rgba:       rgb

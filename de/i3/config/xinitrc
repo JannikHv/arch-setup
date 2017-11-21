@@ -2,6 +2,11 @@
 pkill compton
 pkill pulseaudio
 
+# Prevent screen from going off
+xset s off
+xset -dpms
+xset s noblank
+
 # Start default programs
 pulseaudio -D
 compton -f &

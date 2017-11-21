@@ -102,6 +102,12 @@ bindsym $mod+Shift+Return exec --no-startup-id rofi -modi drun -show drun
 bindsym $mod+Ctrl+Right move workspace to output right
 bindsym $mod+Ctrl+Left  move workspace to output left
 
+### Colorize windows
+client.focused          #303642 #303642 #ffffff #303642 #303642
+client.focused_inactive #434853 #434853 #eeeeee #434853 #434853
+client.unfocused        #434853 #434853 #eeeeee #434853 #434853
+client.urgent           #303642 #303642 #ffffff #303642 #303642
+
 ### Set default workspaces
 set $workspace1  "1:   "
 set $workspace2  "2:   "
