@@ -1,0 +1,12 @@
+# Stop background processes if necessary
+pkill compton
+pkill pulseaudio
+
+# Start default programs
+pulseaudio -D
+compton -f &
+synclient TapButton1=1
+setxkbmap de
+xdg-user-dirs-update
+xdg-usder-dirs-gtk-update
+exec i3
