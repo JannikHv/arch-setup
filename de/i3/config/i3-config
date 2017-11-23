@@ -104,7 +104,7 @@ bindsym $mod+Ctrl+Left  move workspace to output left
 
 ### Colorize windows
 client.focused          #303642 #303642 #ffffff #303642 #303642
-client.focused_inactive #434853 #434853 #eeeeee #434853 #434853
+client.focused_inactive #686d76 #686d76 #eeeeee #686d76 #686d76
 client.unfocused        #434853 #434853 #eeeeee #434853 #434853
 client.urgent           #303642 #303642 #ffffff #303642 #303642
 
