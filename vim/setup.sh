@@ -11,6 +11,7 @@ sudo pacman -S vim{,-nerdtree,-runtime} --needed --noconfirm
 col_dir="${HOME}/.vim/colors"
 syn_dir="/usr/share/vim/vim80/syntax"
 
+# Create required directories if they don't exist
 mkdir -p "${col_dir}"
 sudo mkdir -p "${syn_dir}"
 

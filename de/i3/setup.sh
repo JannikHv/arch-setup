@@ -13,6 +13,8 @@ sudo rm /etc/i3blocks.conf
 mkdir -p ~/.config/i3
 mkdir -p ~/.config/i3/wallpapers
 
+# i3block modules
+
 cp -rf     "modules"                ~/.config/i3/modules
 cp -f      "config/i3-config"       ~/.config/i3/config
 sudo cp -f "config/i3blocks.conf"   /etc/i3blocks.conf

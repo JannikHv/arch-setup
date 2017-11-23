@@ -11,10 +11,12 @@ rofi.lines:             7
 rofi.font:              opensans regular 14
 rofi.hide-scrollbar:    true
 
+
 ! font settings
-Xft.autohint:   0
-Xft.lcdfilter:  lcddefault
-Xft.Hintstyle:  hintslight
-Xft.hinting:    1
-Xft.antialias:  1
+Xft.dpi:        96
+Xft.antialias:  true
+Xft.hinting:    true
 Xft.rgba:       rgb
+Xft.autohint:   false
+Xft.hintstyle:  hintslight
+Xft.lcdfilter:  lcddefault
