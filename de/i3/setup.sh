@@ -5,30 +5,14 @@ if [[ ${EUID} -eq 0 ]]; then
     exit 1
 fi
 
-# i3
-rm -f   ~/.config/i3/config
-rm -rf  ~/.config/i3/modules
-sudo rm /etc/i3blocks.conf
+# Create directories if no existing
+mkdir -p      ~/.config/i3/{wallpapers,modules}
+sudo mkdir -p /etc/xdg/termite/
 
-mkdir -p ~/.config/i3
-mkdir -p ~/.config/i3/wallpapers
-
-# i3block modules
-
-cp -rf     "modules"                ~/.config/i3/modules
-cp -f      "config/i3-config"       ~/.config/i3/config
-sudo cp -f "config/i3blocks.conf"   /etc/i3blocks.conf
-
-# termite
-sudo rm -f /etc/xdg/termite/config
-
-sudo mkdir -p /etc/xdg/termite
-
-sudo cp    "config/termite-config" /etc/xdg/termite/config
-
-# xorg
-rm -f ~/.xinitrc
-rm -f ~/.Xresources
-
-cp "config/xinitrc"     ~/.xinitrc
-cp "config/Xresources"  ~/.Xresources
+# Update files
+sudo cp -f "config/i3blocks.conf"  "/etc/i3blocks.conf"
+sudo cp -f "config/termite-config" "/etc/xdg/termite/config"
+cp -f      "config/i3-config"      "${HOME}/.config/i3/config"
+cp -f      "config/xinitrc"        "${HOME}/.xinitrc"
+cp -f      "config/Xresources"     "${HOME}/.Xresources"
+cp -rfT    "modules"               "${HOME}/.config/i3/modules"
