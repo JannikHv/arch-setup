@@ -64,9 +64,6 @@ bar {
         status_command i3blocks
 }
 
-# Set wallpaper
-exec_always --no-startup-id feh --bg-scale ~/.config/i3/wallpapers/Default.jpg
-
 
 
 ### APPLICATIONS ###

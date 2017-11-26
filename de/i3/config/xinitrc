@@ -8,6 +8,7 @@ xset -dpms
 xset s noblank
 
 # Start default programs
+feh --bg-scale ~/.config/i3/wallpapers/Default*
 pulseaudio -D
 compton -f &
 synclient TapButton1=1
