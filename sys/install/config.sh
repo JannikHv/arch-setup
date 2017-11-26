@@ -16,7 +16,9 @@ function conf_lang() {
     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen
     locale-gen &> /dev/null
     export LANG=en_US.UTF-8
-    echo "LANG=en_US.UTF-8" > /etc/locale.conf
+    echo "LANG=en_US.UTF-8"    > /etc/locale.conf
+    echo "LC_ALL=en_US.UTF-8" >> /etc/environment
+    echo "LANG=en_US.UTF-8"   >> /etc/environment
 }
 
 function conf_repo() {
