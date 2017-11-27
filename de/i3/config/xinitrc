@@ -3,6 +3,7 @@ pkill compton
 pkill pulseaudio
 
 # Prevent screen from going off
+xset -b
 xset s off
 xset -dpms
 xset s noblank
