@@ -6,7 +6,7 @@ if [[ ${EUID} -eq 0 ]]; then
 fi
 
 # Create directories if no existing
-mkdir -p      ~/.config/i3/{wallpapers,modules}
+mkdir -p      ~/.config/i3/{wallpapers,modules,scripts}
 sudo mkdir -p /etc/xdg/termite/
 
 # Update files
@@ -16,3 +16,4 @@ cp -f      "config/i3-config"      "${HOME}/.config/i3/config"
 cp -f      "config/xinitrc"        "${HOME}/.xinitrc"
 cp -f      "config/Xresources"     "${HOME}/.Xresources"
 cp -rfT    "modules"               "${HOME}/.config/i3/modules"
+cp -rfT    "scripts"               "${HOME}/.config/i3/scripts"
