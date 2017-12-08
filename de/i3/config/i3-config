@@ -75,6 +75,9 @@ bindsym $mod+Return exec termite
 # Open rofi
 bindsym $mod+Shift+Return exec --no-startup-id rofi -modi drun -show drun
 
+# Lock screen
+bindsym $mod+Shift+l exec --no-startup-id ~/.config/i3/scripts/blurlock.sh
+
 
 
 ### WINDOW ###
