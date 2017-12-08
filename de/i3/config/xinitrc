@@ -3,7 +3,6 @@ pkill compton
 pkill pulseaudio
 
 # Prevent screen from going off
-xset -b
 xset s off
 xset -dpms
 xset s noblank
@@ -11,7 +10,7 @@ xset s noblank
 # Start default programs
 feh --bg-scale ~/.config/i3/wallpapers/Default*
 pulseaudio -D
-compton -f &
+compton &
 synclient TapButton1=1
 setxkbmap de
 xdg-user-dirs-update
