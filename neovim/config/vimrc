@@ -1,0 +1,74 @@
+set nocompatible
+set visualbell  
+set noerrorbells
+set autoread
+set nobackup
+set nowb
+set noswapfile
+set mouse=a
+set number
+set cursorline
+
+" So tab is 2 spaces and not a block
+set softtabstop=0
+set tabstop=8
+set shiftwidth=8
+set expandtab
+set smarttab
+
+set fileformat=unix
+
+filetype plugin on
+filetype indent on
+
+" Autofill characters
+ino " ""<left>
+ino ' ''<left>
+ino ( ()<left>
+ino [ []<left>
+ino { {}<left>
+"ino < <><left>
+ino /* /* */<left><left><left>
+ino {<CR> {<CR>}<ESC>O
+
+nnoremap <C-right> <esc>ea
+inoremap <C-right> <esc>ea
+
+
+" Control + Up down line movement
+nnoremap <C-up> :m .-2<CR>==gi
+nnoremap <C-down> :m .+1<CR>==gi
+
+inoremap <C-up> <ESC>:m .-2<CR>==gi
+inoremap <C-down> <ESC>:m .+1<CR>==gi
+
+vnoremap <C-up> :m '<-2<CR>gv=gv
+vnoremap <C-down> :m '>+1<CR>gv=gv
+
+" Nerd Tree shortcuts
+nnoremap <C-y> :NERDTreeToggle<ESC>
+nnoremap <C-f> :NERDTree %<ESC>
+
+set list
+"set listchars=tab:  ,trail:·,extends:>,precedes:<,nbsp:%
+scriptencoding=utf-8
+set encoding=utf-8
+set listchars=tab:!·,trail:·
+
+" Set Theme & Colors
+syntax enable
+set termguicolors
+set t_Co=256
+set background=dark
+let g:airline_theme='mygruvbox'
+colorscheme mygruvbox
+"highlight Normal ctermbg=NONE
+"highlight nonText ctermbg=NONE
+set guifont=Roboto\ 20
+
+" Enable NERDTree and set focus on Editor
+au VimEnter * NERDTree /home/jannik/Dropbox/Code/
+au VimEnter * wincmd p
+
+let NERDTreeWinSize=27
+"au VimEnter * Minimap
