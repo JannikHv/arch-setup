@@ -479,11 +479,9 @@ unlet s:cpo_save
 
 " MANUALLY ADDED!
 " Gtk Container Widgets
-syn keyword	cType		GtkWindow GtkHeaderBar GtkStack GtkGrid GtkStackSwitcher 
-GtkStackSidebar
-syn keyword	cConstant	GTK_WINDOW GTK_HEADER_BAR GTK_STACK GTK_GRID 
-GTK_STACK_SWITCHER GTK_STACK_SIDEBAR
-syn keyword	cConstant	GTK_CONTAINER GTK_BIN
+syn keyword	cType		GtkWindow GtkHeaderBar GtkStack GtkGrid GtkStackSwitcher GtkStackSidebar
+syn keyword	cConstant	GTK_WINDOW GTK_HEADER_BAR GTK_STACK GTK_STACK_SWITCHER GTK_STACK_SIDEBAR
+syn keyword	cConstant	GTK_CONTAINER GTK_BIN GTK_GRID
 
 " Gtk Widgets
 syn keyword	cType		GtkWidget GtkButton GtkLabel GtkToggleButton GtkEntry
