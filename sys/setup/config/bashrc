@@ -20,5 +20,7 @@ fi
 
 PS1="\[\e]0;\u@\h: \w\a\]$PS1"
 
+eval "$(dircolors -b)"
+
 # Variables
 export gtklib=`pkg-config --cflags --libs gtk+-3.0`
