@@ -24,6 +24,9 @@ smart_gaps on
 gaps inner 12
 gaps outer 12
 
+bindsym $mod+g       gaps inner current set 0  gaps outer current set 0
+bindsym $mod+Shift+g gaps inner current set 12 gaps outer current set 12
+
 # Exit i3
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
@@ -61,7 +64,7 @@ bindsym $mod+r mode "resize"
 bar {
         position top
         tray_output none
-        font pango:opensans regular 12
+        font pango:OpenSans Regular 12
         status_command i3blocks
 }
 
