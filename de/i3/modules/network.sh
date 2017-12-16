@@ -4,7 +4,7 @@ output=""
 
 function check_network() {
     local device=$(ip route get 8.8.8.8 | sed -n '1p' | awk '{print $5}')
-    #local ipaddr=$(ip route get 8.8.8.8 | sed -n '1p' | awk '{print $7}')
+    local ipaddr=$(ip route get 8.8.8.8 | sed -n '1p' | awk '{print $7}')
     local bssid=$(iwgetid -r)
 
     # Check if offline
@@ -15,12 +15,10 @@ function check_network() {
 
     # Check if connection is wired or wireless
     if [[ -d "/sys/class/net/${device}/wireless" ]]; then
-        output+=" "
+        output+="  ${bssid}"
     else
-        output+=" "
+        output+="  ${ipaddr}"
     fi
-
-    output+="${bssid}"
 }
 
 check_network
