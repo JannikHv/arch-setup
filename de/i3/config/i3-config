@@ -1,5 +1,7 @@
 ### CONFIGURATION ###
 
+new_window pixel 3
+
 # Set mod key
 set $mod Mod1
 
