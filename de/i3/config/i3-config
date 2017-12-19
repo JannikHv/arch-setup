@@ -14,7 +14,7 @@ floating_modifier $mod
 # Colorize i3
 client.focused          #303642 #303642 #ffffff #303642 #303642
 client.focused_inactive #686d76 #686d76 #eeeeee #686d76 #686d76
-client.unfocused        #434853 #434853 #eeeeee #434853 #434853
+client.unfocused        #898999 #898999 #eeeeee #898999 #898999
 client.urgent           #303642 #303642 #ffffff #303642 #303642
 
 # Restart/Reload i3
@@ -68,6 +68,14 @@ bar {
         tray_output none
         font pango:OpenSans Regular 12
         status_command i3blocks
+
+        colors {
+                focused_workspace  #000000 #000000 #ffffff
+                active_workspace   #000000 #000000 #ffffff
+                inactive_workspace #000000 #000000 #898989
+                urgent_workspace   #000000 #000000 #ffff00
+                binding_mode       #000000 #000000 #ff0000
+        }
 }
 
 
