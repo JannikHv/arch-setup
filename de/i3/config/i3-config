@@ -73,8 +73,8 @@ bar {
                 focused_workspace  #000000 #000000 #ffffff
                 active_workspace   #000000 #000000 #ffffff
                 inactive_workspace #000000 #000000 #898989
-                urgent_workspace   #000000 #000000 #ffff00
-                binding_mode       #000000 #000000 #ff0000
+                urgent_workspace   #000000 #000000 #898989
+                binding_mode       #000000 #000000 #00ff00
         }
 }
 
