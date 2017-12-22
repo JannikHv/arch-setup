@@ -10,7 +10,7 @@ rofi.columns:           1
 rofi.lines:             7
 rofi.font:              opensans regular 14
 rofi.hide-scrollbar:    true
-
+rofi.display-drun:       Search
 
 ! font settings
 Xft.dpi:        96
