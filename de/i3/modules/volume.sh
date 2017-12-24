@@ -20,7 +20,7 @@ function check_volume() {
         output+=" "
     fi
 
-    output+="${percent}"
+    output+=" ${percent}"
 }
 
 check_volume

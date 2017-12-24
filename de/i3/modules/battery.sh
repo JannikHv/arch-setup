@@ -24,7 +24,7 @@ function check_battery() {
         output+=" "
     fi
 
-    output+="${percent}%"
+    output+=" ${percent}%"
 }
 
 check_battery
