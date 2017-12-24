@@ -64,17 +64,22 @@ bindsym $mod+r mode "resize"
 
 # i3bar
 bar {
-        position top
-        tray_output none
-        font pango:OpenSans Regular 12
-        status_command i3blocks
+        position        top
+        tray_output     none
+        font            pango:OpenSans Regular 12
+        status_command  i3blocks
+        i3bar_command   i3bar -t
 
         colors {
-                focused_workspace  #000000 #000000 #ffffff
-                active_workspace   #000000 #000000 #ffffff
-                inactive_workspace #000000 #000000 #898989
-                urgent_workspace   #000000 #000000 #898989
-                binding_mode       #000000 #000000 #00ff00
+                background #ffffffAA
+                statusline #000000
+
+                #                  Border     Bg        Text
+                focused_workspace  #ffffffAA  #ffffffAA #000000
+                active_workspace   #ffffffAA  #ffffffAA #000000
+                inactive_workspace #ffffffAA  #ffffffAA #898989
+                urgent_workspace   #ffffffAA  #ffffffAA #898989
+                binding_mode       #ffffffAA  #ffffffAA #00ff00
         }
 }
 
