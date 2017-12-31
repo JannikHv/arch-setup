@@ -17,7 +17,7 @@ pkg_lst=("xorg-server" "xorg-xinit" "xf86-input-mouse" "xf86-input-keyboard" "xf
          "easytag" "libreoffice-fresh" "gimp" "dropbox" "dropbox-cli" "google-chrome"
          
          "ttf-liberation" "ttf-roboto" "ttf-ubuntu-font-family" "ttf-dejavu" "cantarell-fonts"
-         "ttf-hack" "ttf-roboto-mono" "ttf-opensans ttf-font-awesome"
+         "ttf-hack" "ttf-roboto-mono" "ttf-opensans ttf-font-awesome-4"
          
          "curl" "git" "wget" "youtube-dl" "zip" "unzip" "tar" "gptfdisk" "pkg-config" "openssh" "whois"
          
