@@ -11,8 +11,8 @@ set cursorline
 
 " So tab is 2 spaces and not a block
 set softtabstop=0
-set tabstop=8
-set shiftwidth=8
+set tabstop=4
+set shiftwidth=4
 set expandtab
 set smarttab
 
@@ -27,7 +27,6 @@ ino ' ''<left>
 ino ( ()<left>
 ino [ []<left>
 ino { {}<left>
-"ino < <><left>
 ino /* /* */<left><left><left>
 ino {<CR> {<CR>}<ESC>O
 
@@ -50,25 +49,21 @@ nnoremap <C-y> :NERDTreeToggle<ESC>
 nnoremap <C-f> :NERDTree %<ESC>
 
 set list
-"set listchars=tab:  ,trail:·,extends:>,precedes:<,nbsp:%
 scriptencoding=utf-8
 set encoding=utf-8
 set listchars=tab:!·,trail:·
 
 " Set Theme & Colors
 syntax enable
-set termguicolors
 set t_Co=256
+set termguicolors
 set background=dark
 let g:airline_theme='mygruvbox'
 colorscheme mygruvbox
 "highlight Normal ctermbg=NONE
 "highlight nonText ctermbg=NONE
-set guifont=Roboto\ 20
 
 " Enable NERDTree and set focus on Editor
-au VimEnter * NERDTree /home/jannik/Dropbox/Code/
 au VimEnter * wincmd p
 
-let NERDTreeWinSize=27
-"au VimEnter * Minimap
+let NERDTreeWinSize=25
