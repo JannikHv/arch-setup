@@ -12,10 +12,10 @@ font pango:opensans regular 11
 floating_modifier $mod
 
 # Colorize i3
-client.focused          #303642 #303642 #ffffff #303642 #303642
+client.focused          #1f222a #1f222a #ffffff #1f222a #1f222a
 client.focused_inactive #686d76 #686d76 #eeeeee #686d76 #686d76
 client.unfocused        #898999 #898999 #eeeeee #898999 #898999
-client.urgent           #303642 #303642 #ffffff #303642 #303642
+client.urgent           #1f222a #1f222a #ffffff #1f222a #1f222a
 
 # Restart/Reload i3
 bindsym $mod+Shift+c reload
@@ -75,11 +75,11 @@ bar {
                 statusline #ffffff
 
                 #                  Border     Bg        Text
-                focused_workspace  #303642DD  #303642DD #ffffff
-                active_workspace   #303642DD  #303642DD #ffffff
-                inactive_workspace #303642DD  #303642DD #999999
-                urgent_workspace   #303642DD  #303642DD #999999
-                binding_mode       #303642DD  #303642DD #ffffff
+                focused_workspace  #1f222aDD  #1f222aDD #ffffff
+                active_workspace   #1f222aDD  #1f222aDD #ffffff
+                inactive_workspace #1f222aDD  #1f222aDD #999999
+                urgent_workspace   #1f222aDD  #1f222aDD #999999
+                binding_mode       #1f222aDD  #1f222aDD #ffffff
         }
 }
 
