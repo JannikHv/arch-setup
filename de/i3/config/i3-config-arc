@@ -66,12 +66,12 @@ bindsym $mod+r mode "resize"
 bar {
         position        top
         tray_output     none
-        font            pango:OpenSans Regular 13
+        font            pango:OpenSans Regular 12
         status_command  i3blocks
         i3bar_command   i3bar -t
 
         colors {
-                background #1f222aDD
+                background #303642DD
                 statusline #ffffff
 
                 #                  Border     Bg        Text
