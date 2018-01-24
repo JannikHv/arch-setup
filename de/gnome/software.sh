@@ -4,7 +4,7 @@ pkg_gnome=("adwaita-icon-theme" "eog" "evince" "gnome-calculator" "gnome-contact
            "gnome-control-center" "gnome-screenshot" "gnome-session" "gnome-tweak-tool"
            "gnome-settings-daemon" "gnome-shell" "gnome-shell-extensions" "gnome-system-monitor"
            "gnome-themes-standard" "gvfs" "gvfs-afc" "gvfs-goa" "gvfs-google" "gvfs-mtp" "gvfs-nfs"
-           "mousetweaks" "mutter" "nautilus" "nautilus-dropbox" "networkmanager" "totem"
+           "mousetweaks" "mutter" "nautilus" "nautilus-dropbox" "networkmanager" "totem" "gedit"
            "xdg-user-dirs-gtk" "network-manager-applet" "rhythmbox" "mpv" "nodejs" "electron" "vlc"
            "gnome-shell-extension-dash-to-dock" "gnome-shell-extension-no-topleft-hot-corner"
            "gnome-shell-extension-topicons-plus"
