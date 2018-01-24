@@ -1,3 +1,4 @@
 xdg-user-dirs-update
 xdg-user-dirs-gtk-update
+pgrep pulseaudio &> /dev/null || pulseaudio &> /dev/null &
 exec gnome-session
