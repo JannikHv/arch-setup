@@ -15,6 +15,8 @@ pkg_lst=("xorg-server" "xorg-xinit" "xf86-input-mouse" "xf86-input-keyboard" "xf
          "xdg-user-dirs-gtk" "xdg-utils"
          
          "easytag" "libreoffice-fresh" "gimp" "dropbox" "dropbox-cli" "google-chrome"
+
+         "brasero" "libburn" "libisofs" "dvdauthor" "vcdimager"
          
          "ttf-liberation" "ttf-roboto" "ttf-ubuntu-font-family" "ttf-dejavu" "cantarell-fonts"
          "ttf-hack" "ttf-roboto-mono" "ttf-opensans ttf-font-awesome-4"
