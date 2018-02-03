@@ -14,6 +14,7 @@ sudo ln -s "$(pwd)/tools/msc.sh"        "${bin_dir}/msc"
 sudo ln -s "$(pwd)/tools/autoremove.sh" "${bin_dir}/autoremove"
 sudo ln -s "$(pwd)/tools/mkcfile.py"    "${bin_dir}/mkcfile"
 sudo ln -s "$(pwd)/tools/jtk.sh"        "${bin_dir}/jtk"
+sudo ln -s "$(pwd)/tools/sasswatch.sh"  "${bin_dir}/sasswatch"
 
 cp "config/bashrc" "${HOME}/.bashrc"
 sudo cp "config/bashrc" "/etc/bash.bashrc"
