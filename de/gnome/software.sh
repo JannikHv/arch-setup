@@ -1,6 +1,6 @@
 #!/bin/sh
 
-pkg_gnome=("adwaita-icon-theme" "eog" "evince" "gnome-calculator" "gnome-contacts"
+pkg_gnome=("adwaita-icon-theme" "eog" "evince" "gnome-calculator" "gnome-contacts" "gnome-terminal"
            "gnome-control-center" "gnome-screenshot" "gnome-session" "gnome-tweak-tool"
            "gnome-settings-daemon" "gnome-shell" "gnome-shell-extensions" "gnome-system-monitor"
            "gnome-themes-standard" "gvfs" "gvfs-afc" "gvfs-goa" "gvfs-google" "gvfs-mtp" "gvfs-nfs"
