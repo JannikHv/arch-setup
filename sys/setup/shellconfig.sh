@@ -7,7 +7,7 @@ fi
 
 bin_dir="/usr/local/bin"
 
-sudo rm -f "${bin_dir}/"{msc,autoremove,mkcfile,jtk}
+sudo rm -f "${bin_dir}/"{msc,autoremove,mkcfile,jtk,sasswatch}
 sudo rm -f "/etc/bash.bashrc" "${HOME}/.bashrc"
 
 sudo ln -s "$(pwd)/tools/msc.sh"        "${bin_dir}/msc"
