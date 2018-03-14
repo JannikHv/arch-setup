@@ -235,7 +235,7 @@ function jtk_get_mp3() {
 
         jtk_check_url "${url}" || return 1
 
-        youtube-dl -x --audio-format "mp3" --audio-quality 0 "${url}" --no-playlist
+        youtube-dl -x --audio-format "mp3" --audio-quality 0 "${url}" --no-playlist -o "%(title)s.%(ext)s"
 }
 
 function jtk_get_mp4() {
@@ -243,7 +243,7 @@ function jtk_get_mp4() {
 
         jtk_check_url "${url}" || return 1
 
-        youtube-dl -f "mp4" "${url}" --no-playlist
+        youtube-dl -f "mp4" "${url}" --no-playlist -o "%(title)s.%(ext)s"
 }
 
 # --show functions
