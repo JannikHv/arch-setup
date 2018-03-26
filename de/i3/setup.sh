@@ -12,9 +12,13 @@ sudo mkdir -p /etc/xdg/termite/
 # Update files
 sudo cp -f "config/i3blocks-bw.conf"     "/etc/i3blocks.conf"
 sudo cp -f "config/termite-config"       "/etc/xdg/termite/config"
-cp -f      "config/i3-config-bw"            "${HOME}/.config/i3/config"
+cp -f      "config/i3-config-bw"         "${HOME}/.config/i3/config"
 cp -f      "config/xinitrc"              "${HOME}/.xinitrc"
 cp -f      "config/Xresources"           "${HOME}/.Xresources"
 cp -rfT    "modules"                     "${HOME}/.config/i3/modules"
 cp -rfT    "scripts"                     "${HOME}/.config/i3/scripts"
 cp -f      "wallpapers/"*                "${HOME}/.config/i3/wallpapers/Default.png"
+
+sudo rm -rf /usr/local/bin/{blurlock,mkwp}
+sudo ln -s "$(pwd)/scripts/blurlock.sh" /usr/local/bin/blurlock
+sudo ln -s "$(pwd)/scripts/mkwp.sh"     /usr/local/bin/mkwp
