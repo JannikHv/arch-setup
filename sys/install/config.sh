@@ -68,6 +68,9 @@ function conf_boot() {
     sed -i -e 's/#HandleLidSwitchDocked=ignore/HandleLidSwitchDocked=ignore/g' /etc/systemd/logind.conf
 
     grub-mkconfig -o /boot/grub/grub.cfg &> /dev/null
+
+    # Disable pcspkr module
+    echo "blacklist pcspkr" > /etc/modprobe.d/nobeep.conf
 }
 
 # Evaluating arguments
