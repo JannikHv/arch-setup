@@ -3,9 +3,7 @@
 output=""
 
 function check_date() {
-    local format="+%a %d.%m.%Y"
-
-    output+="  $(date "${format}") "
+    output+="  $(date "+%a %d.%m.%Y") "
 }
 
 check_date

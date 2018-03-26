@@ -3,9 +3,7 @@
 output=""
 
 function check_time() {
-    local format="+%H:%M:%S"
-
-    output+="  $(date "${format}")"
+    output+="  $(date "+%H:%M:%S")"
 }
 
 check_time

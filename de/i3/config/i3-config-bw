@@ -71,15 +71,15 @@ bar {
         i3bar_command   i3bar -t
 
         colors {
-                background #ffffff
+                background #ffffffdd
                 statusline #000000
 
-                #                  Border   Bg      Text
-                focused_workspace  #ffffff  #ffffff #000000
-                active_workspace   #ffffff  #ffffff #000000
-                inactive_workspace #ffffff  #ffffff #646464
-                urgent_workspace   #ffffff  #ffffff #646464
-                binding_mode       #ffffff  #ffffff #323232
+                #                  Border     Bg        Text
+                focused_workspace  #ffffffdd  #ffffffdd #000000
+                active_workspace   #ffffffdd  #ffffffdd #000000
+                inactive_workspace #ffffffdd  #ffffffdd #646464
+                urgent_workspace   #ffffffdd  #ffffffdd #646464
+                binding_mode       #ffffffdd  #ffffffdd #323232
         }
 }
 

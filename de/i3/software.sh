@@ -1,9 +1,9 @@
 #!/bin/sh
 
-pkg_i3=("acpi" "playerctl" "alsa-utils" "feh" "pulseaudio" "pulseaudio-alsa" "rhythmbox" "xorg-xprop" "rofi"
-        "termite" "dropbox-cli" "vlc" "qt4" "networkmanager" "network-manager-applet" "compton" "xorg-xbacklight"
+pkg_i3=("acpi" "playerctl" "alsa-utils" "feh" "pulseaudio" "pulseaudio-alsa" "cmus" "xorg-xprop" "rofi"
+        "termite" "dropbox-cli" "networkmanager" "network-manager-applet" "compton" "xorg-xbacklight"
         "i3-gaps" "i3blocks" "i3lock" "i3status" "htop" "lxappearance" "arc-gtk-theme" "scrot" "imagemagick" "mupdf"
-        "ranger" "mpv" "xbanish" "nodejs" "electron" "soundconverter")
+        "ranger" "mpv" "xbanish" "soundconverter")
 
 # Burning utilities:
 # brasero libburn libisofs dvdauthor vcdimager
