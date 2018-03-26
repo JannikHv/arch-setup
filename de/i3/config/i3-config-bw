@@ -181,6 +181,7 @@ bindsym $mod+Shift+9 move container to workspace $workspace9  workspace $workspa
 bindsym $mod+Shift+0 move container to workspace $workspace10 workspace $workspace10
 
 # Assign default applications to workspaces
+assign [class="Atom"]            $workspace2
 assign [class="Google-chrome"]   $workspace3
 assign [class="Rhythmbox"]       $workspace4
 assign [class="Audacity"]        $workspace4
