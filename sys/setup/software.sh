@@ -14,7 +14,7 @@ pkg_lst=("xorg-server" "xorg-xinit" "xf86-input-mouse" "xf86-input-keyboard" "xf
          "xf86-input-synaptics" "xorg-xrandr" "downgrade" "xdotool" "rsync" "xdg-user-dirs"
          "xdg-user-dirs-gtk" "xdg-utils"
          
-         "easytag" "libreoffice-fresh" "gimp" "dropbox" "dropbox-cli" "google-chrome"
+         "easytag" "gimp" "dropbox" "dropbox-cli" "google-chrome"
 
          "brasero" "libburn" "libisofs" "dvdauthor" "vcdimager"
          
@@ -25,9 +25,7 @@ pkg_lst=("xorg-server" "xorg-xinit" "xf86-input-mouse" "xf86-input-keyboard" "xf
          
          "aircrack-ng" "reaver" "hydra" "arp-scan" "dsniff" "ettercap"
 
-         "sassc" "inotify-tools"
-         
-         "apache"
+         "sassc" "inotify-tools" "htop"
          
          "gst-plugins-ugly" "gst-plugins-good" "gst-libav" "gvfs" "gvfs-mtp" "gvfs-afc" "gvfs-goa"
          "gvfs-google" "gvfs-nfs" "gvfs-smb" "libappindicator-gtk2"
