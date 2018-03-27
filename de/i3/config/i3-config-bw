@@ -13,8 +13,8 @@ floating_modifier $mod
 
 # Colorize i3
 client.focused          #303642 #303642 #ffffff #303642 #303642
-client.focused_inactive #686d76 #686d76 #eeeeee #686d76 #686d76
-client.unfocused        #898999 #898999 #eeeeee #898999 #898999
+client.focused_inactive #999999 #999999 #eeeeee #999999 #999999
+client.unfocused        #999999 #999999 #eeeeee #999999 #999999
 client.urgent           #303642 #303642 #ffffff #303642 #303642
 
 # Restart/Reload i3
