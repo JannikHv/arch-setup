@@ -5,10 +5,9 @@ xset s noblank
 
 # Start default programs
 feh --bg-scale ~/.config/i3/wallpapers/Default*
-pgrep dropbox    &> /dev/null || dropbox &> /dev/null &
 pgrep xbanish    &> /dev/null || xbanish &
 pgrep pulseaudio &> /dev/null || pulseaudio -D
-pgrep dropbox    &> /dev/null || dropbox &
+pgrep dropbox    &> /dev/null || dropbox &> /dev/null &
 pgrep compton    &> /dev/null || compton &
 
 synclient TapButton1=1
