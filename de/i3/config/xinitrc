@@ -1,7 +1,3 @@
-# Stop background processes if necessary
-pkill compton
-pkill pulseaudio
-
 # Prevent screen from going off
 xset s off
 xset -dpms
@@ -9,11 +5,14 @@ xset s noblank
 
 # Start default programs
 feh --bg-scale ~/.config/i3/wallpapers/Default*
-pgrep dropbox &> /dev/null || dropbox &> /dev/null &
-pgrep xbanish &> /dev/null || xbanish &
-pulseaudio -D
-compton &
+pgrep dropbox    &> /dev/null || dropbox &> /dev/null &
+pgrep xbanish    &> /dev/null || xbanish &
+pgrep pulseaudio &> /dev/null || pulseaudio -D
+pgrep dropbox    &> /dev/null || dropbox &
+pgrep compton    &> /dev/null || compton &
+
 synclient TapButton1=1
+loadkeys de
 setxkbmap de
 xdg-user-dirs-update
 xdg-user-dirs-gtk-update
