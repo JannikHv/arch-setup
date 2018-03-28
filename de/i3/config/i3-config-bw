@@ -148,10 +148,10 @@ bindsym $mod+Ctrl+Left  move workspace to output left
 set $workspace1  "1:    "
 set $workspace2  "2:    "
 set $workspace3  "3:    "
-set $workspace4  "4:    "
-set $workspace5  "5:    "
-set $workspace6  "6:    "
-set $workspace7  "7:    "
+set $workspace4  "4:    "
+set $workspace5  "5:    "
+set $workspace6  "6:    "
+set $workspace7  "7:    "
 set $workspace8  "8:    "
 set $workspace9  "9:    "
 set $workspace10 "10:   "
@@ -183,11 +183,13 @@ bindsym $mod+Shift+0 move container to workspace $workspace10 workspace $workspa
 # Assign default applications to workspaces
 assign [class="Atom"]            $workspace2
 assign [class="Google-chrome"]   $workspace3
-assign [class="Rhythmbox"]       $workspace4
-assign [class="Audacity"]        $workspace4
-assign [class="Easytag"]         $workspace4
-assign [class="Vlc"]             $workspace5
-assign [class="libreoffice"]     $workspace6
-assign [class="Gimp-2.8"]        $workspace7
+assign [class="Firefox"]         $workspace3
+assign [class="GitKraken"]       $workspace4
+assign [class="Rhythmbox"]       $workspace5
+assign [class="Audacity"]        $workspace5
+assign [class="Easytag"]         $workspace5
+assign [class="Vlc"]             $workspace6
+assign [class="libreoffice"]     $workspace7
 assign [class="Steam"]           $workspace8
 assign [class="payday2_release"] $workspace9
+assign [class="Gimp-2.8"]        $workspace10
