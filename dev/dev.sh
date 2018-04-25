@@ -1,6 +1,6 @@
 #!/bin/sh
 
-pkg_dev=("atom" "electron" "nodejs" "phpmyadmin" "php" "php-apache" "php-gd" "apache" "mariadb" "sassc" "apache" "npm" "gitkraken" "docker")
+pkg_dev=("atom" "electron" "nodejs" "phpmyadmin" "php" "php-apache" "php-gd" "apache" "mariadb" "sassc" "apache" "npm" "gitkraken" "docker" "create_ap")
 
 echo -e "[\033[1;34m*\e[0m] Installing dev software"
 yaourt -S --noconfirm --needed ${pkg_dev[*]};
