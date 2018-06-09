@@ -94,7 +94,7 @@ bindsym $mod+Return exec termite
 bindsym $mod+Shift+Return exec --no-startup-id rofi -modi drun -show drun
 
 # Lock screen
-bindsym $mod+Shift+l exec --no-startup-id ~/.config/i3/scripts/blurlock.sh
+bindsym $mod+Shift+l exec --no-startup-id blurlock
 
 bindsym --release Print       exec --no-startup-id scrot -z -e    'mv $f ~/Pictures/'
 bindsym --release Shift+Print exec --no-startup-id scrot -z -s -e 'mv $f ~/Pictures/'
