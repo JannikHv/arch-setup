@@ -35,8 +35,8 @@ function conf_repo() {
 
 function conf_pkg() {
     echo "[\033[1;34m*\e[0m] Configuring Packages"
-    pacman -R --noconfirm linux       &> /dev/null
-    pacman -S --noconfirm grub yaourt &> /dev/null
+    pacman -R --noconfirm linux &> /dev/null
+    pacman -S --noconfirm grub  &> /dev/null
 }
 
 function conf_user() {
