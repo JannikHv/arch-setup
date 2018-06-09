@@ -3,7 +3,7 @@
 output=""
 
 function check_date() {
-    output+="  $(date "+%a %d.%m.%Y") "
+    output+="  $(date "+%a %d.%m.%Y")"
 }
 
 check_date
