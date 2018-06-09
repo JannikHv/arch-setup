@@ -64,11 +64,11 @@ bindsym $mod+r mode "resize"
 
 # i3bar
 bar {
-        position        top
-        tray_output     none
-        font            pango:OpenSans Regular 13
-        status_command  i3blocks
-        i3bar_command   i3bar -t
+        position            top
+        tray_output         none
+        font                pango:OpenSans Regular 13
+        status_command      i3blocks
+        i3bar_command       i3bar -t
 
         colors {
                 background #111111
