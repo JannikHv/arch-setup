@@ -1,6 +1,6 @@
 ### CONFIGURATION ###
 
-new_window pixel 3
+new_window pixel 2
 
 # Set mod key
 set $mod Mod1
@@ -12,10 +12,10 @@ font pango:opensans regular 11
 floating_modifier $mod
 
 # Colorize i3
-client.focused          #303642 #303642 #ffffff #303642 #303642
-client.focused_inactive #999999 #999999 #eeeeee #999999 #999999
-client.unfocused        #999999 #999999 #eeeeee #999999 #999999
-client.urgent           #303642 #303642 #ffffff #303642 #303642
+client.focused          #000000 #000000 #000000 #000000 #000000
+client.focused_inactive #cccccc #cccccc #cccccc #cccccc #cccccc
+client.unfocused        #cccccc #cccccc #cccccc #cccccc #cccccc
+client.urgent           #ffffff #ffffff #ffffff #ffffff #ffffff
 
 # Restart/Reload i3
 bindsym $mod+Shift+c reload
@@ -66,20 +66,20 @@ bindsym $mod+r mode "resize"
 bar {
         position        top
         tray_output     none
-        font            pango:OpenSans Regular 12
+        font            pango:OpenSans Regular 13
         status_command  i3blocks
         i3bar_command   i3bar -t
 
         colors {
-                background #ffffffdd
-                statusline #000000
+                background #111111
+                statusline #ffffff
 
-                #                  Border     Bg        Text
-                focused_workspace  #ffffffdd  #ffffffdd #000000
-                active_workspace   #ffffffdd  #ffffffdd #000000
-                inactive_workspace #ffffffdd  #ffffffdd #646464
-                urgent_workspace   #ffffffdd  #ffffffdd #646464
-                binding_mode       #ffffffdd  #ffffffdd #323232
+                #                  Border   Bg      Text
+                focused_workspace  #111111  #111111 #ffffff
+                active_workspace   #111111  #111111 #ffffff
+                inactive_workspace #111111  #111111 #aaaaaa
+                urgent_workspace   #111111  #111111 #aaaaaa
+                binding_mode       #111111  #111111 #ffffff
         }
 }
 
@@ -193,3 +193,5 @@ assign [class="libreoffice"]     $workspace7
 assign [class="Steam"]           $workspace8
 assign [class="payday2_release"] $workspace9
 assign [class="Gimp-2.8"]        $workspace10
+
+for_window [class="Nautilus"] floating enable
