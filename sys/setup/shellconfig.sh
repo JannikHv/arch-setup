@@ -16,6 +16,7 @@ sudo cp -f "$(pwd)/tools/mkcfile.py"    "${bin_dir}/mkcfile"
 sudo cp -f "$(pwd)/tools/jtk.sh"        "${bin_dir}/jtk"
 sudo cp -f "$(pwd)/tools/sasswatch.sh"  "${bin_dir}/sasswatch"
 sudo cp -f "$(pwd)/tools/blurlock.sh"   "${bin_dir}/blurlock"
+sudo cp -f "$(pwd)/tools/mkcomp.py"     "${bin_dir}/mkcomp"
 
 cp "config/bashrc" "${HOME}/.bashrc"
 sudo cp "config/bashrc" "/etc/bash.bashrc"
