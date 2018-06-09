@@ -20,7 +20,7 @@ function check_dropbox() {
             output+=" "
         fi
     else
-        output+=" "
+        exit 0
     fi
 }
 
