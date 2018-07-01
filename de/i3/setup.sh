@@ -20,3 +20,4 @@ cp -rfT    "scripts"                     "${HOME}/.config/i3/scripts"
 cp -f      "wallpapers/"*                "${HOME}/.config/i3/wallpapers/Default"
 
 sudo cp -f "$(pwd)/scripts/mkwp.sh"     /usr/local/bin/mkwp
+sudo systemctl enable --now systemd-timesyncd
