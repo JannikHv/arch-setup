@@ -74,15 +74,15 @@ bar {
         #modifier Mod1
 
         colors {
-                background #111111
+                background #000000DD
                 statusline #ffffff
 
-                #                  Border   Bg      Text
-                focused_workspace  #111111  #111111 #ffffff
-                active_workspace   #111111  #111111 #ffffff
-                inactive_workspace #111111  #111111 #aaaaaa
-                urgent_workspace   #111111  #111111 #aaaaaa
-                binding_mode       #111111  #111111 #ffffff
+                #                  Border     Bg        Text
+                focused_workspace  #000000DD  #000000DD #ffffff
+                active_workspace   #000000DD  #000000DD #ffffff
+                inactive_workspace #000000DD  #000000DD #aaaaaa
+                urgent_workspace   #000000DD  #000000DD #aaaaaa
+                binding_mode       #000000DD  #000000DD #ffffff
         }
 }
 
