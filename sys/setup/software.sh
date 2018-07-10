@@ -23,7 +23,7 @@ pkg_lst=("xorg-server" "xorg-xinit" "xf86-input-mouse" "xf86-input-keyboard" "xf
          
          "curl" "git" "wget" "youtube-dl" "zip" "unzip" "tar" "gptfdisk" "pkg-config" "openssh" "whois"
          
-         "aircrack-ng" "reaver" "hydra" "arp-scan" "dsniff" "ettercap"
+         "aircrack-ng" "reaver" "hydra" "arp-scan" "dsniff" "ettercap" "nmap"
 
          "sassc" "inotify-tools" "htop"
          
