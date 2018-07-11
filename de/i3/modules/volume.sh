@@ -3,11 +3,15 @@
 output=""
 
 function check_volume() {
-    local percent=$(pactl list sinks | grep "Volume:" | sed -n '1p' | awk '{print $5}')
-    local muted=$(pactl list sinks | grep "Mute:" | awk '{print $2}')
+    pgrep pulseaudio &> /dev/null || exit 0
 
-    if [[ "${percent}" == "0%" || "${muted}" == "yes" ]]; then
-        output+="  0%"
+    local percent=$(pacmd list-sinks | grep volume | sed -n '1p' | awk '{print $5}')
+    local muted=$(pacmd list-sinks | grep "muted: yes")
+
+    if [[ -n $muted ]]; then
+        output+="  ${percent}"
+    elif [[ "${percent}" == "0%" ]]; then
+        output+="    ${percent}"
     else
         output+="  ${percent}"
     fi
