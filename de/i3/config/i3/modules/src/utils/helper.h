@@ -9,6 +9,23 @@
 
 #define CHUNK_SIZE 512
 
+static inline bool file_exists_from_path(const char *path)
+{
+    return (access(path, F_OK) == -1) ? false : true;
+}
+
+static inline bool dir_exists_from_path(const char *path)
+{
+    DIR *dir = opendir(path);
+
+    if (dir != NULL) {
+        closedir(dir);
+        return true;
+    } else {
+        return false;
+    }
+}
+
 static inline const char *read_file_from_path(const char *path)
 {
     FILE *file    = fopen(path, "r");
@@ -31,52 +48,31 @@ static inline const char *read_file_from_path(const char *path)
     return content;
 }
 
-static inline bool get_process_running_by_name(const char *p_name)
+static inline int get_process_count_by_name(const char *p_name)
 {
+    int count = 0;
     const char *content;
     char tmp_path[CHUNK_SIZE];
-    FILE *file;
-    struct dirent *ent;
     DIR *dir = opendir("/proc");
+    struct dirent *ent;
 
     if (dir == NULL) {
-        return false;
+        return 0;
     }
 
     while ((ent = readdir(dir)) != NULL) {
         sprintf(tmp_path, "%s%s%s", "/proc/", ent->d_name, "/comm");
 
-        file = fopen(tmp_path, "r");
-
-        if (file == NULL) {
-            continue;
-        } else {
+        if (file_exists_from_path(tmp_path)) {
             content = read_file_from_path(tmp_path);
 
             if (strcmp(content, p_name) == 0) {
-                return true;
+                count++;
             }
         }
     }
 
-    return false;
-}
-
-static inline bool file_exists_from_path(const char *path)
-{
-    return (access(path, F_OK) == -1) ? false : true;
-}
-
-static inline bool dir_exists_from_path(const char *path)
-{
-    DIR *dir = opendir(path);
-
-    if (dir != NULL) {
-        closedir(dir);
-        return true;
-    } else {
-        return false;
-    }
+    return count;
 }
 
 #endif /* __HELPER_H__ */

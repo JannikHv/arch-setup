@@ -15,9 +15,9 @@ int main(int argc, char *argv[])
     const char *p_name = argv[1];
     const char *p_icon = argv[2];
 
-    if (!get_process_running_by_name(p_name)) {
-        printf("");
-    } else {
+    if (get_process_count_by_name(p_name) > 0) {
         printf("%s\n", p_icon);
+    } else {
+        printf("");
     }
 }
