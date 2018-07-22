@@ -1,0 +1,22 @@
+! rofi settings
+rofi.color-enabled:     true
+rofi.color-window:      argb:BBffffff, argb:BB000000, argb:BB000000
+!                       bg             fg       bg-alt         hl-bg          hl-fg
+rofi.color-normal:      argb:00ffffff, #000000, argb:00ffffff, argb:BB000000, #00ff00
+rofi.line-padding:      5
+rofi.separator-style:   solid
+rofi.borderwidth:       0
+rofi.columns:           1
+rofi.lines:             7
+rofi.font:              opensans regular 14
+rofi.hide-scrollbar:    true
+rofi.display-drun:       Search
+
+! font settings
+Xft.dpi:        96
+Xft.antialias:  true
+Xft.hinting:    true
+Xft.rgba:       rgb
+Xft.autohint:   false
+Xft.hintstyle:  hintslight
+Xft.lcdfilter:  lcddefault
