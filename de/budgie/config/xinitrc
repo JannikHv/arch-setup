@@ -1,5 +1,0 @@
-xdg-user-dirs-update
-xdg-user-dirs-gtk-update
-pgrep pulseaudio &> /dev/null || pulseaudio &> /dev/null &
-export XDG_CURRENT_DESKTOP=Budgie:GNOME
-exec budgie-desktop
