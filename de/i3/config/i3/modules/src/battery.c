@@ -31,7 +31,7 @@ static const char *bat_level_symbol[] = {
 };
 
 static const char *bat_charging_symbol[] = {
-    "\0", ""
+    "", ""
 };
 
 static BatLevel battery_info_get_level(BatInfo *bat_info)
@@ -70,7 +70,7 @@ static BatInfo *battery_info_get_default(void)
 
 int main(int argc, char *argv[])
 {
-    if (!dir_exists(BAT_PATH_DEFAULT)) {
+    if (!dir_exists_from_path(BAT_PATH_DEFAULT)) {
         exit(1);
     }
 

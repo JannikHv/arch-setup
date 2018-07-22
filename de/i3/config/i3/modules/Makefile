@@ -2,7 +2,7 @@ CC = gcc
 
 LIB_ALSA = `pkg-config --libs alsa`
 
-PROGRAMS = battery brightness date network time user volume
+PROGRAMS = battery brightness date network time user volume progger
 
 all: $(PROGRAMS)
 
@@ -27,5 +27,8 @@ user: src/user.c
 volume: src/volume.c
 	$(CC) src/volume.c $(LIB_ALSA) -o volume
 
+progger: src/progger.c
+	$(CC) src/progger.c -o progger
+
 clean:
-	rm -f battery brightness date network time user volume
+	rm -f battery brightness date network time user volume progger

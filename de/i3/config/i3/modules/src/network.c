@@ -38,7 +38,7 @@ static NetType net_get_device_type(const char *device_name)
 
     sprintf(tmp_path, "%s%s%s", NET_DIR_DEFAULT, device_name, "/wireless");
 
-    return (dir_exists(tmp_path)) ? NET_TYPE_WIRELESS : NET_TYPE_WIRED;
+    return (dir_exists_from_path(tmp_path)) ? NET_TYPE_WIRELESS : NET_TYPE_WIRED;
 }
 
 static bool net_get_device_active(const char *device_name)
@@ -64,7 +64,7 @@ static const char *net_get_active_device_name(void)
     while ((ent = readdir(dir)) != NULL) {
         sprintf(tmp_path, "%s%s%s", NET_DIR_DEFAULT, ent->d_name, "/device");
 
-        if (dir_exists(tmp_path) && net_get_device_active(ent->d_name)) {
+        if (dir_exists_from_path(tmp_path) && net_get_device_active(ent->d_name)) {
             return ent->d_name;
         }
     }

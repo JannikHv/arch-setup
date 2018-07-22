@@ -11,7 +11,7 @@
 
 int main(int argc, char *argv[])
 {
-    if (!dir_exists(BACKLIGHT_DIR_DEFAULT)) {
+    if (!dir_exists_from_path(BACKLIGHT_DIR_DEFAULT)) {
         exit(1);
     }
 
