@@ -13,5 +13,7 @@ all: check
 
 	cd ~/.config/i3/modules && make
 
+	systemctl --user mask pulseaudio.{service,socket}
+
 check:
 	yaourt -S --noconfirm --needed $(PKGS)
