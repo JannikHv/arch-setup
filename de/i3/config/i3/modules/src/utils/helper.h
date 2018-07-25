@@ -2,6 +2,7 @@
 #define __HELPER_H__
 
 #include <stdio.h>
+#include <stdlib.h>
 #include <string.h>
 #include <dirent.h>
 #include <stdbool.h>
@@ -32,7 +33,10 @@ static inline const char *read_file_from_path(const char *path)
     char *content = (char *) malloc(sizeof(char) * CHUNK_SIZE);
 
     if (file == NULL) {
-        free(content);
+        if (content != NULL) {
+            free(content);
+        }
+
         return NULL;
     }
 
@@ -61,10 +65,14 @@ static inline int get_process_count_by_name(const char *p_name)
     }
 
     while ((ent = readdir(dir)) != NULL) {
-        sprintf(tmp_path, "%s%s%s", "/proc/", ent->d_name, "/comm");
+        snprintf(tmp_path, sizeof(tmp_path), "%s%s%s", "/proc/", ent->d_name, "/comm");
 
         if (file_exists_from_path(tmp_path)) {
             content = read_file_from_path(tmp_path);
+
+            if ((content = read_file_from_path(tmp_path)) == NULL) {
+                continue;
+            }
 
             if (strcmp(content, p_name) == 0) {
                 count++;
