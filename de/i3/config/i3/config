@@ -97,7 +97,7 @@ bindsym $mod+Return exec termite
 bindsym $mod+Shift+Return exec --no-startup-id rofi -modi drun -show drun
 
 # Lock screen
-bindsym $mod+Shift+l exec --no-startup-id blurlock
+bindsym $mod+x exec --no-startup-id blurlock
 
 bindsym --release Print       exec --no-startup-id scrot -z -e    'mv $f ~/Pictures/'
 bindsym --release Shift+Print exec --no-startup-id scrot -z -s -e 'mv $f ~/Pictures/'
@@ -111,11 +111,21 @@ bindsym $mod+Down  focus down
 bindsym $mod+Up    focus up
 bindsym $mod+Right focus right
 
+bindsym $mod+j     focus left
+bindsym $mod+k     focus down
+bindsym $mod+i     focus up
+bindsym $mod+l     focus right
+
 # Move windows
 bindsym $mod+Shift+Left  move left
 bindsym $mod+Shift+Down  move down
 bindsym $mod+Shift+Up    move up
 bindsym $mod+Shift+Right move right
+
+bindsym $mod+Shift+j     move left
+bindsym $mod+Shift+k     move down
+bindsym $mod+Shift+i     move up
+bindsym $mod+Shift+l     move right
 
 # Change container layout
 bindsym $mod+w layout tabbed
@@ -146,6 +156,9 @@ bindsym $mod+Shift+q kill
 # Move workspaces to other displays
 bindsym $mod+Ctrl+Right move workspace to output right
 bindsym $mod+Ctrl+Left  move workspace to output left
+
+bindsym $mod+Ctrl+l     move workspace to output right
+bindsym $mod+Ctrl+j     move workspace to output left
 
 # Set default workspaces
 set $workspace1  "1:    "
