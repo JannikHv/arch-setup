@@ -34,3 +34,4 @@
 'atom-text-editor':
     'ctrl-shift-down' : 'editor:add-selection-below'
     'ctrl-shift-up'   : 'editor:add-selection-above'
+    'ctrl-g'          : 'github:toggle-git-tab'
