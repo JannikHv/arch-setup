@@ -5,12 +5,8 @@ if [ $EUID -eq 0 ]; then
     exit 1
 fi
 
-if [ ! $1 ]; then
-    exit 1
-fi
-
 refresh_wp() {
-    feh --bg-scale ~/.config/i3/wallpapers/Default*
+    feh --bg-scale ~/.config/i3/wallpapers/Default
 }
 
 clear_wp() {
@@ -18,23 +14,20 @@ clear_wp() {
 }
 
 assign_wp() {
-    local wpFile="${1}"
-
     clear_wp
-    cp "${wpFile}" ~/.config/i3/wallpapers/Default
+    cp -f "${1}" ~/.config/i3/wallpapers/Default
     refresh_wp
 }
 
 for arg in $@; do
-    case $1 in
+    case "${1}" in
         -r | --refresh)
             refresh_wp
             shift
             ;;
         *)
-            assign_wp ${1}
+            [[ -f ${1} ]] && assign_wp "${1}"
             shift
             ;;
     esac
 done
-

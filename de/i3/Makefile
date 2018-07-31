@@ -16,4 +16,4 @@ all: check
 	systemctl --user mask pulseaudio.{service,socket}
 
 check:
-	yaourt -S --noconfirm --needed $(PKGS)
+	#yaourt -S --noconfirm --needed $(PKGS)
