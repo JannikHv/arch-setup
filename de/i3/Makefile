@@ -11,9 +11,11 @@ all: check
 	cp -f      config/Xresources ~/.Xresources
 	cp -rfT    config/i3         ~/.config/i3
 
+	sudo cp -f      config/i3/scripts/mkwp.sh /usr/local/bin/mkwp
+
 	cd ~/.config/i3/modules && make
 
 	systemctl --user mask pulseaudio.{service,socket}
 
 check:
-	#yaourt -S --noconfirm --needed $(PKGS)
+	yaourt -S --noconfirm --needed $(PKGS)
