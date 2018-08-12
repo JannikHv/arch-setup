@@ -21,19 +21,34 @@ background = #111317
 
 highlight = #4c566a
 
+# Black
 color0  = #3b4252
-color1  = #d0474d
-color2  = #a3be8c
-color3  = #f0d965
-color4  = #57a0d3
-color5  = #c867c3
-color6  = #92c7d6
-color7  = #e5e9f0
 color8  = #4c566a
+
+# Red
+color1  = #d0474d
 color9  = #d0474d
+
+# Green
+color2  = #77D066
 color10 = #77d066
+
+# Yellow
+color3  = #f0d965
 color11 = #f0d965
+
+# Blue
+color4  = #57a0d3
 color12 = #57a0d3
-color13 = #c867c3
+
+# Purple
+color5  = #bb81b4
+color13 = #bb81b4
+
+# Light-Blue
+color6  = #92c7d6
 color14 = #92c7d6
+
+# White
+color7  = #e5e9f0
 color15 = #eceff4
