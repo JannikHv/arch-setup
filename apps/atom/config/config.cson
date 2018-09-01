@@ -1,0 +1,24 @@
+"*":
+  core:
+    audioBeep: false
+    autoHideMenuBar: true
+    disabledPackages: [
+      "wrap-guide"
+      "markdown-preview"
+    ]
+    telemetryConsent: "no"
+  editor:
+    fontFamily: "Roboto Mono Medium"
+    showIndentGuide: true
+    showInvisibles: true
+    tabLength: 4
+  "exception-reporting":
+    userId: "48858baa-b3d7-4924-829c-64c2c1821d92"
+  "one-dark-ui":
+    stickyHeaders: true
+  "tree-view":
+    hideVcsIgnoredFiles: true
+  welcome:
+    showOnStartup: false
+  whitespace:
+    ensureSingleTrailingNewline: false
