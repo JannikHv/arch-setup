@@ -1,0 +1,33 @@
+atom-text-editor {
+    background-color: #111317;
+
+    .gutter {
+        .line-number {
+            &.cursor-line {
+                color: #fff;
+                border-left: 2px solid white;
+                padding: 0;
+            }
+
+            &.git-line-modified {
+                color: #57a0d3;
+                border-left: 2px solid #57a0d3;
+            }
+
+            &.git-line-added {
+                color: #77D066;
+                border-left: 2px solid #77D066;
+            }
+
+            &.git-line-removed {
+                color: #d0474d;
+                border-left: 2px solid #d0474d;
+            }
+        }
+    }
+
+    .vertical-scrollbar {
+        display: none;
+    }
+}
+
