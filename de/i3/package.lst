@@ -1,4 +1,4 @@
 acpi playerctl alsa-utils feh pulseaudio pulseaudio-alsa cmus xorg-xprop rofi
 termite dropbox-cli networkmanager network-manager-applet compton xorg-xbacklight
-i3-gaps i3blocks i3lock i3status htop lxappearance arc-gtk-theme scrot imagemagick mupdf
-ranger mpv xbanish soundconverter
+i3-gaps i3blocks i3lock i3status htop lxappearance arc-gtk-theme scrot imagemagick evince
+ranger mpv xbanish soundconverter nautilus
