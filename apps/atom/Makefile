@@ -1,13 +1,13 @@
 DEPS = atom
 
-ATOM_INSTALL = minimap language-javascript-jsx
+ATOM_INSTALL = minimap language-javascript-jsx markdown-preview-plus language-meson remote-ftp
 ATOM_DISABLE = wrap-guide
 
 install: check
 	mkdir -p ~/.atom
-	cp -f config/keymap.cson  ~/.atom/
-	cp -f config/style.less   ~/.atom/
-	cp -f config/config.csgon ~/.atom/
+	cp -f config/keymap.cson ~/.atom/
+	cp -f config/styles.less ~/.atom/
+	cp -f config/config.cson ~/.atom/
 
 check:
 	sudo pacman -S --noconfirm --needed $(DEPS)
