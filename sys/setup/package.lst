@@ -11,5 +11,5 @@ sassc inotify-tools htop
 gst-plugins-ugly gst-plugins-good gst-libav gvfs gvfs-mtp gvfs-afc gvfs-goa
 gvfs-google gvfs-nfs gvfs-smb libappindicator-gtk2
 libappindicator-gtk3 libappindicator-sharp
-xcursor-vanilla-dmz
+xcursor-vanilla-dmz paper-icon-theme arc-gtk-theme
 hplip cups cups-pdf
