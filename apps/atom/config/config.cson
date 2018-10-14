@@ -12,13 +12,19 @@
     showIndentGuide: true
     showInvisibles: true
     tabLength: 4
+    zoomFontWhenCtrlScrolling: false
   "exception-reporting":
     userId: "48858baa-b3d7-4924-829c-64c2c1821d92"
   "one-dark-ui":
     stickyHeaders: true
+  "remote-ftp":
+    connector:
+      autoUploadOnSave: "only when connected"
+    notifications:
+      enableTransfer: true
+    statusbar: {}
   "tree-view":
     hideVcsIgnoredFiles: true
   welcome:
     showOnStartup: false
-  whitespace:
-    ensureSingleTrailingNewline: false
+  whitespace: {}
