@@ -24,3 +24,4 @@ eval "$(dircolors -b)"
 
 # Variables
 export gtklib=`pkg-config --cflags --libs gtk+-3.0`
+export TERM=xterm
