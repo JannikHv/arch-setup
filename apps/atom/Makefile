@@ -1,6 +1,6 @@
 DEPS = atom
 
-ATOM_INSTALL = minimap language-javascript-jsx markdown-preview-plus language-meson remote-ftp
+ATOM_INSTALL = minimap language-javascript-jsx markdown-preview-plus language-meson remote-ftp pigments
 ATOM_DISABLE = wrap-guide
 
 install: check
