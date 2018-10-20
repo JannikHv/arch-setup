@@ -25,3 +25,5 @@ eval "$(dircolors -b)"
 # Variables
 export gtklib=`pkg-config --cflags --libs gtk+-3.0`
 export TERM=xterm
+export npm_config_prefix=~/.node_modules
+PATH="$HOME/.node_modules/bin:$PATH"
