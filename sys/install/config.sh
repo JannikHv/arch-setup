@@ -7,7 +7,7 @@ function conf_time() {
     rm /etc/localtime
     ln -s "/usr/share/zoneinfo/${arg_zone}" /etc/localtime
     hwclock --systohc --utc &> /dev/null
-    systemctl enable systemd-timesyncd NetworkManager
+    systemctl enable systemd-timesyncd NetworkManager fstrim.timer
 }
 
 function conf_lang() {
