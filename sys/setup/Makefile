@@ -16,6 +16,7 @@ all: check
 
 	cp -f config/bashrc ~/.bashrc
 	sudo cp -f config/bashrc /etc/bash.bashrc
+	sudo cp -f config/bashrc /root/.bashrc
 
 check:
 	yaourt -S --noconfirm --needed $(PKGS)

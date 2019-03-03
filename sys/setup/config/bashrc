@@ -6,24 +6,20 @@ shopt -s histappend
 shopt -s checkwinsize
 
 # Aliases
-alias ls='ls --color=auto --group-directories-first'
-alias ll='ls -alF'
-alias la='ls -a'
-alias l='ls'
-alias grep='grep --color=auto'
+alias ls="ls --color=auto --group-directories-first"
+alias ll="ls -alF"
+alias la="ls -a"
+alias l="ls"
+alias grep="grep --color=auto"
 
-if [[ ${EUID} -eq 1000 ]]; then
-    PS1='\[\033[01;32m\]${USER^}\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
+if [ ${EUID} -eq 0 ]; then
+    PS1="\[\e]0;\u@\h: \w\a\]\[\033[01;31m\]Root\[\033[00m\]"
 else
-    PS1='\[\033[01;31m\]${USER^}\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
+    PS1="\[\e]0;\u@\h: \w\a\]\[\033[01;32m\]${USER^}\[\033[00m\]"
 fi
 
-PS1="\[\e]0;\u@\h: \w\a\]$PS1"
+PS1+="\[\033[01;33m\]@\[\033[00m\]"
+PS1+="\[\033[01;36m\]$(hostname)\[\033[00m\]:"
+PS1+="\[\033[01;34m\]\w\[\033[00m\]\$ "
 
 eval "$(dircolors -b)"
-
-# Variables
-export gtklib=`pkg-config --cflags --libs gtk+-3.0`
-export TERM=xterm
-export npm_config_prefix=~/.node_modules
-PATH="$HOME/.node_modules/bin:$PATH"
