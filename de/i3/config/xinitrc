@@ -3,11 +3,15 @@ xset s off
 xset -dpms
 xset s noblank
 
+# Kill processes
+pkill -9 compton
+pkill -9 pulseaudio
+pkill -9 xbanish
+
 # Start default programs
 feh --bg-scale ~/.config/i3/wallpapers/Default*
-pgrep xbanish &> /dev/null || xbanish &
-pgrep compton &> /dev/null || compton &
-pulseaudio --check && pulseaudio --kill
+xbanish &
+compton &
 pulseaudio --start -D
 
 synclient TapButton1=1
