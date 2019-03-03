@@ -2,7 +2,7 @@ xorg-server xorg-xinit xf86-input-mouse xf86-input-keyboard xf86-input-libinput
 xorg-xrandr downgrade xdotool rsync xdg-user-dirs
 xdg-user-dirs-gtk xdg-utils htop
 google-chrome
-ttf-liberation ttf-roboto ttf-ubuntu-font-family ttf-dejavu cantarell-fonts
+ttf-liberation ttf-roboto cantarell-fonts
 ttf-hack ttf-roboto-mono ttf-opensans ttf-font-awesome-4
 curl git wget youtube-dl zip unzip tar gptfdisk pkg-config openssh whois
 aircrack-ng reaver hydra arp-scan dsniff
