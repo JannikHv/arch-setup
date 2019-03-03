@@ -12,7 +12,8 @@ all: check
 	cp -f      config/Xresources ~/.Xresources
 	cp -rfT    config/i3         ~/.config/i3
 
-	sudo cp -f      config/i3/scripts/mkwp.sh /usr/local/bin/mkwp
+	sudo cp -f config/i3/scripts/mkwp.sh /usr/local/bin/mkwp
+	sudo cp -f config/30-touchpad.conf /etc/X11/xorg.conf.d/30-touchpad.conf
 
 	cd ~/.config/i3/modules && make
 
