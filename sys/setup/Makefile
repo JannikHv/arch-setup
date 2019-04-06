@@ -23,5 +23,8 @@ all: check
 	@read -p "Enter git User: " gituser;\
 	git config --global user.name "$$gituser" --replace-all
 
+	git config --global format.pretty online
+	git config --global credential.helper store
+
 check:
 	yaourt -S --noconfirm --needed $(PKGS)
