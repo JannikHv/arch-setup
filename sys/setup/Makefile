@@ -18,5 +18,10 @@ all: check
 	sudo cp -f config/bashrc /etc/bash.bashrc
 	sudo cp -f config/bashrc /root/.bashrc
 
+	@read -p "Enter git E-Mail: " gitemail;\
+	git config --global user.email "$$gitemail" --replace-all
+	@read -p "Enter git User: " gituser;\
+	git config --global user.name "$$gituser" --replace-all
+
 check:
 	yaourt -S --noconfirm --needed $(PKGS)
