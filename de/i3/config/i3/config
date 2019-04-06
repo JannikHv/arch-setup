@@ -64,7 +64,7 @@ bindsym $mod+r mode "resize"
 
 # i3bar
 bar {
-        position        top
+        position        bottom
         tray_output     none
         font            pango:OpenSans Regular 13
         status_command  i3blocks
@@ -74,15 +74,15 @@ bar {
         #modifier Mod1
 
         colors {
-                background #000000DD
+                background #000000F0
                 statusline #ffffff
 
                 #                  Border     Bg        Text
-                focused_workspace  #000000DD  #000000DD #ffffff
-                active_workspace   #000000DD  #000000DD #ffffff
-                inactive_workspace #000000DD  #000000DD #aaaaaa
-                urgent_workspace   #000000DD  #000000DD #aaaaaa
-                binding_mode       #000000DD  #000000DD #ffffff
+                focused_workspace  #000000F0  #000000F0 #ffffff
+                active_workspace   #000000F0  #000000F0 #ffffff
+                inactive_workspace #000000F0  #000000F0 #aaaaaa
+                urgent_workspace   #000000F0  #000000F0 #aaaaaa
+                binding_mode       #000000F0  #000000F0 #ffffff
         }
 }
 
@@ -98,6 +98,7 @@ bindsym $mod+Shift+Return exec --no-startup-id rofi -modi drun -show drun
 
 # Lock screen
 bindsym $mod+x exec --no-startup-id blurlock
+bindsym $mod+Shift+x exec --no-startup-id blurlock
 
 bindsym --release Print       exec --no-startup-id scrot -z -e    'mv $f ~/Pictures/'
 bindsym --release Shift+Print exec --no-startup-id scrot -z -s -e 'mv $f ~/Pictures/'
