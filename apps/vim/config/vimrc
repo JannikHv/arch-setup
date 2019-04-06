@@ -1,5 +1,5 @@
 set nocompatible
-set visualbell  
+set visualbell
 set noerrorbells
 set autoread
 set nobackup
@@ -8,6 +8,7 @@ set noswapfile
 set mouse=a
 set number
 set cursorline
+set bs=2
 
 " So tab is 2 spaces and not a block
 set softtabstop=0
@@ -67,3 +68,5 @@ colorscheme mygruvbox
 au VimEnter * wincmd p
 
 let NERDTreeWinSize=25
+let g:powerline_pycmd='py3'
+set laststatus=2
