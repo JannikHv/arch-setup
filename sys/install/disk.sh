@@ -67,7 +67,7 @@ function mount_partitions() {
 
 function base_install() {
     echo "[\033[1;34m*\e[0m] Installing Base"
-    pacstrap /mnt base base-devel linux-lts linux-lts-headers git python3 bash-completion networkmanager &> /dev/null && \
+    pacstrap /mnt base base-devel linux linux-headers git python3 bash-completion networkmanager &> /dev/null && \
         echo "[\033[1;32m+\e[0m] Installed base system" || \
         { printf "[\033[1;31m-\e[0m] Failed to install base system"; read; }
 
