@@ -7,7 +7,7 @@ function conf_time() {
     rm /etc/localtime
     ln -s "/usr/share/zoneinfo/${arg_zone}" /etc/localtime
     hwclock --systohc --utc &> /dev/null
-    systemctl enable systemd-timesyncd NetworkManager fstrim.timer
+    systemctl enable systemd-timesyncd NetworkManager
 }
 
 function conf_lang() {
@@ -38,8 +38,7 @@ function conf_repo() {
 
 function conf_pkg() {
     echo "[\033[1;34m*\e[0m] Configuring Packages"
-    pacman -R --noconfirm linux &> /dev/null
-    pacman -S --noconfirm grub  &> /dev/null
+    pacman -S --noconfirm grub &> /dev/null
 }
 
 function conf_user() {
@@ -116,7 +115,8 @@ if [[ -e "${arg_disk}" ]]; then
     conf_pkg
     conf_user
     conf_boot
-    echo "Don't forget to install video drivers."
+    echo "[*] Install Video Drivers"
+    echo "[*] Enable fstrim.timer?"
     exit 0
 else
     echo "[\033[1;31m-\e[0m] Disk not found: ${1}"
