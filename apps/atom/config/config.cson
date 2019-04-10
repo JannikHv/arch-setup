@@ -9,6 +9,7 @@
   editor:
     fontFamily: "Roboto Mono Medium"
     preferredLineLength: 90
+    scrollPastEnd: true
     showIndentGuide: true
     showInvisibles: true
     tabLength: 4
