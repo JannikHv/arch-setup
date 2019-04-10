@@ -3,12 +3,12 @@
     audioBeep: false
     autoHideMenuBar: true
     disabledPackages: [
-      "wrap-guide"
       "markdown-preview"
     ]
     telemetryConsent: "no"
   editor:
     fontFamily: "Roboto Mono Medium"
+    preferredLineLength: 90
     showIndentGuide: true
     showInvisibles: true
     tabLength: 4
