@@ -1,0 +1,26 @@
+[Default Applications]
+text/html=google-chrome.desktop
+x-scheme-handler/http=google-chrome.desktop
+x-scheme-handler/https=google-chrome.desktop
+x-scheme-handler/about=google-chrome.desktop
+x-scheme-handler/unknown=google-chrome.desktop
+x-scheme-handler/mailspring=mailspring.desktop
+x-scheme-handler/webcal=google-chrome.desktop
+
+[Removed Associations]
+application/pdf=libreoffice-draw.desktop;gimp.desktop;
+image/png=feh.desktop;gimp.desktop;
+text/csv=libreoffice-calc.desktop;
+image/jpeg=gimp.desktop;
+image/gif=feh.desktop;mpv.desktop;gimp.desktop;
+application/xhtml+xml=firefox.desktop;
+
+[Added Associations]
+application/pdf=org.gnome.Evince.desktop;
+image/jpeg=eog.desktop;
+text/html=atom.desktop;
+image/gif=google-chrome.desktop;
+application/vnd.ms-publisher=atom.desktop;
+image/png=eog.desktop;
+text/plain=org.gnome.gedit.desktop;
+application/xhtml+xml=google-chrome.desktop;

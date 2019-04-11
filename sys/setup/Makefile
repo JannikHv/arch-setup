@@ -18,6 +18,9 @@ all: check
 	sudo cp -f config/bashrc /etc/bash.bashrc
 	sudo cp -f config/bashrc /root/.bashrc
 
+	mkdir -p ~/.config
+	cp -f config/mimeapps.list ~/.config/mimeapps.list
+
 	@read -p "Enter git E-Mail: " gitemail;\
 	git config --global user.email "$$gitemail" --replace-all
 	@read -p "Enter git User: " gituser;\
