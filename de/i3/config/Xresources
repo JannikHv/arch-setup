@@ -7,10 +7,10 @@ rofi.line-padding:      5
 rofi.separator-style:   solid
 rofi.borderwidth:       0
 rofi.columns:           1
-rofi.lines:             7
+rofi.lines:             6
 rofi.font:              opensans regular 14
 rofi.hide-scrollbar:    true
-rofi.display-drun:       Search
+rofi.display-drun:      Open
 
 ! font settings
 Xft.dpi:        96
