@@ -23,3 +23,10 @@ PS1+="\[\033[01;36m\]$(hostname)\[\033[00m\]:"
 PS1+="\[\033[01;34m\]\w\[\033[00m\]\$ "
 
 eval "$(dircolors -b)"
+
+# NPM
+PATH="$HOME/.node_modules/bin:$PATH"
+export npm_config_prefix=~/.node_modules
+
+# Termite
+export TERM='xterm'
