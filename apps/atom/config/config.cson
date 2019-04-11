@@ -1,31 +1,53 @@
 "*":
+  "autocomplete-plus":
+    autoActivationDelay: 500
   core:
     audioBeep: false
     autoHideMenuBar: true
+    closeDeletedFileTabs: true
     disabledPackages: [
       "markdown-preview"
+      "language-typescript"
+      "open-on-github"
     ]
+    followSymlinks: false
     telemetryConsent: "no"
   editor:
     fontFamily: "Roboto Mono Medium"
+    fontSize: 15
+    lineHeight: 1.75
     preferredLineLength: 90
     scrollPastEnd: true
     showIndentGuide: true
     showInvisibles: true
+    softWrap: true
     tabLength: 4
     zoomFontWhenCtrlScrolling: false
   "exception-reporting":
     userId: "48858baa-b3d7-4924-829c-64c2c1821d92"
+  "file-icons":
+    coloured: false
+    strategies: {}
+  "git-diff": {}
   "one-dark-ui":
     stickyHeaders: true
+  pigments:
+    markerType: "native-dot"
   "remote-ftp":
+    beta: {}
     connector:
       autoUploadOnSave: "only when connected"
     notifications:
       enableTransfer: true
-    statusbar: {}
+    statusbar:
+      enable: true
+  "status-bar": {}
+  "tab-control": {}
   "tree-view":
     hideVcsIgnoredFiles: true
   welcome:
     showOnStartup: false
   whitespace: {}
+".source.ts":
+  editor:
+    tabLength: 2
