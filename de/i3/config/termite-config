@@ -9,46 +9,46 @@ urgent_on_bell = true
 clickable_url = false
 font = Roboto Mono 11
 scrollback_lines = 10000
-search_wrap = true
+search_wrap = false
 
 [colors]
-cursor = #d8dee9
+cursor = #ffffff
 cursor_foreground = #2e3440
 
-foreground = #d8dee9
-foreground_bold = #d8dee9
-background = #111317
+foreground = #ffffff
+foreground_bold = #ffffff
+background = #080808
 
-highlight = #4c566a
+highlight = #353535
 
-# Black
-color0  = #3b4252
-color8  = #4c566a
+# Black / Grey
+color0  = #000000
+color8  = #555753
 
-# Red
-color1  = #d0474d
-color9  = #d0474d
+# Red / Bright Red
+color1  = #EF2929
+color9  = #EF2929
 
-# Green
-color2  = #77D066
-color10 = #77d066
+# Green + Bright Green
+color2  = #82d233
+color10 = #9dff3d
 
-# Yellow
-color3  = #f0d965
-color11 = #f0d965
+# Yellow (Orange) + Bright Yellow (Yellow)
+color3  = #C4A000
+color11 = #FCE94F
 
-# Blue
-color4  = #57a0d3
-color12 = #57a0d3
+# Blue + Bright Blue
+color4  = #1e8bff
+color12 = #92c7ff
 
-# Purple
-color5  = #bb81b4
-color13 = #bb81b4
+# Magenta (Purple) + Bright Magenta
+color5  = #75507B
+color13 = #AD7FA8
 
-# Light-Blue
-color6  = #92c7d6
-color14 = #92c7d6
+# Cyan (Aqua) + Bright Cyan
+color6  = #06989A
+color14 = #34E2E2
 
-# White
-color7  = #e5e9f0
-color15 = #eceff4
+# Light Grey (Selection) + White (Current Line)
+color7  = #D3D7CF
+color15 = #EEEEEC
