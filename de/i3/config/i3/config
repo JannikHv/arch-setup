@@ -1,20 +1,21 @@
 ### CONFIGURATION ###
 
-new_window pixel 2
+new_window pixel 1
 
 # Set mod key
 set $mod Mod1
 
-# Set default font
-font pango:opensans regular 11
+# Set default font#
+# font pango:opensans regular 11
+font pango: Roboto Regular 12
 
 # Mouse drag + Mod key to move floating windows
 floating_modifier $mod
 
 # Colorize i3
-client.focused          #000000 #000000 #FFFFFF #000000 #000000
-client.focused_inactive #cccccc #cccccc #000000 #cccccc #cccccc
-client.unfocused        #cccccc #cccccc #000000 #cccccc #cccccc
+client.focused          #000000 #000000 #ffffff #000000 #000000
+client.focused_inactive #ffffff #ffffff #000000 #ffffff #ffffff
+client.unfocused        #ffffff #ffffff #000000 #ffffff #ffffff
 client.urgent           #ffffff #ffffff #000000 #ffffff #ffffff
 
 # Restart/Reload i3
@@ -26,8 +27,8 @@ bindsym $mod+Shift+r restart
 gaps inner 10
 gaps outer 10
 
-bindsym $mod+g       gaps inner current set 0  gaps outer current set 0
-bindsym $mod+Shift+g gaps inner current set 12 gaps outer current set 12
+bindsym $mod+g       gaps inner current set 10 gaps outer current set 10
+bindsym $mod+Shift+g gaps inner current set 0  gaps outer current set 0
 
 # Exit i3
 bindsym $mod+Shift+e exec i3-msg exit
@@ -65,8 +66,10 @@ bindsym $mod+r mode "resize"
 # i3bar
 bar {
         position        bottom
+        height          33
         tray_output     none
-        font            pango:OpenSans Regular 13
+        #font            pango:OpenSans Regular 13
+        font            pango:Roboto Regular 13
         status_command  i3blocks
         i3bar_command   i3bar -t
         #mode hide
@@ -74,15 +77,15 @@ bar {
         #modifier Mod1
 
         colors {
-                background #000000F0
+                background #080808f5
                 statusline #ffffff
 
-                #                  Border     Bg        Text
-                focused_workspace  #000000F0  #000000F0 #ffffff
-                active_workspace   #000000F0  #000000F0 #ffffff
-                inactive_workspace #000000F0  #000000F0 #aaaaaa
-                urgent_workspace   #000000F0  #000000F0 #aaaaaa
-                binding_mode       #000000F0  #000000F0 #ffffff
+                #                  Border   Bg      Text
+                focused_workspace  #080808  #080808 #ffffff
+                active_workspace   #080808  #080808 #ffffff
+                inactive_workspace #080808  #080808 #aaaaaa
+                urgent_workspace   #080808  #080808 #aaaaaa
+                binding_mode       #080808  #080808 #ffffff
         }
 }
 
@@ -92,6 +95,7 @@ bar {
 
 # Open terminal
 bindsym $mod+Return exec termite
+bindsym Ctrl+$mod+t exec termite
 
 # Open rofi
 bindsym $mod+Shift+Return exec --no-startup-id rofi -modi drun -show drun
@@ -102,6 +106,13 @@ bindsym $mod+Shift+x exec --no-startup-id blurlock
 
 bindsym --release Print       exec --no-startup-id scrot -z -e    'mv $f ~/Pictures/'
 bindsym --release Shift+Print exec --no-startup-id scrot -z -s -e 'mv $f ~/Pictures/'
+
+# Color picker
+bindsym $mod+Shift+p exec --no-startup-id "termite -r 'temporary' -e 'gpick -p -s'"
+
+# Redshift
+bindsym $mod+Shift+n exec --no-startup-id redshift -x
+bindsym $mod+n       exec --no-startup-id redshift -O 5000
 
 
 ### WINDOW ###
@@ -162,16 +173,19 @@ bindsym $mod+Ctrl+l     move workspace to output right
 bindsym $mod+Ctrl+j     move workspace to output left
 
 # Set default workspaces
-set $workspace1  "1:    "
-set $workspace2  "2:    "
-set $workspace3  "3:    "
-set $workspace4  "4:    "
-set $workspace5  "5:    "
-set $workspace6  "6:    "
-set $workspace7  "7:    "
-set $workspace8  "8:    "
-set $workspace9  "9:    "
-set $workspace10 "10:   "
+set $workspace1  "1:  "
+set $workspace2  "2:  "
+set $workspace3  "3:  "
+set $workspace4  "4:  "
+set $workspace5  "5:  "
+set $workspace6  "6:  "
+set $workspace7  "7:  "
+set $workspace8  "8:  "
+set $workspace9  "9:  "
+set $workspace10 "10: "
+
+# Additional helper workspaces
+set $wp_colorpicker "Color Picker"
 
 # Switch to other workspaces
 bindsym $mod+1 workspace $workspace1
@@ -206,9 +220,13 @@ assign [class="Rhythmbox"]       $workspace5
 assign [class="Audacity"]        $workspace5
 assign [class="Easytag"]         $workspace5
 assign [class="Vlc"]             $workspace6
+assign [class="mpv"]             $workspace6
 assign [class="libreoffice"]     $workspace7
 assign [class="Steam"]           $workspace8
 assign [class="payday2_release"] $workspace9
 assign [class="Gimp-2.8"]        $workspace10
 
 for_window [class="Nautilus"] floating enable
+for_window [class="Gpick"]    floating enable
+
+assign [window_role="temporary"] $wp_colorpicker
