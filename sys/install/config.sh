@@ -21,6 +21,8 @@ function conf_lang() {
     echo "LC_ALL=en_US.UTF-8" >> /etc/environment
     echo "LANG=en_US.UTF-8"   >> /etc/environment
 
+    echo "KEYMAP=de" > /etc/vconsole.conf
+
     localectl set-keymap de
 }
 
