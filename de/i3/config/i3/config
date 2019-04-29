@@ -216,6 +216,7 @@ assign [class="Atom"]            $workspace2
 assign [class="Google-chrome"]   $workspace3
 assign [class="Firefox"]         $workspace3
 assign [class="GitKraken"]       $workspace4
+assign [class="Postman"]         $workspace4
 assign [class="Rhythmbox"]       $workspace5
 assign [class="Audacity"]        $workspace5
 assign [class="Easytag"]         $workspace5
