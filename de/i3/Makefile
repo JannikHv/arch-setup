@@ -13,6 +13,7 @@ all: check
 	cp -f      config/xinitrc      ~/.xinitrc
 	cp -f      config/Xresources   ~/.Xresources
 	cp -rfT    config/i3           ~/.config/i3
+	cp -f      config/bash_profile ~/.bash_profile
 
 	sudo cp -f config/i3/scripts/mkwp.sh /usr/local/bin/mkwp
 	sudo cp -f config/30-touchpad.conf /etc/X11/xorg.conf.d/30-touchpad.conf
