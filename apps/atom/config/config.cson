@@ -48,6 +48,12 @@
   welcome:
     showOnStartup: false
   whitespace: {}
+".basic.html.text":
+  editor:
+    tabLength: 2
 ".source.ts":
+  editor:
+    tabLength: 2
+".css.source":
   editor:
     tabLength: 2
