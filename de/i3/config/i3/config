@@ -13,10 +13,10 @@ font pango: Roboto Regular 12
 floating_modifier $mod
 
 # Colorize i3
-client.focused          #000000 #000000 #ffffff #000000 #000000
-client.focused_inactive #ffffff #ffffff #000000 #ffffff #ffffff
-client.unfocused        #ffffff #ffffff #000000 #ffffff #ffffff
-client.urgent           #ffffff #ffffff #000000 #ffffff #ffffff
+client.focused          #1f1f1f #1f1f1f #f1f1f1 #1f1f1f #1f1f1f
+client.focused_inactive #f1f1f1 #f1f1f1 #1f1f1f #f1f1f1 #f1f1f1
+client.unfocused        #f1f1f1 #f1f1f1 #1f1f1f #f1f1f1 #f1f1f1
+client.urgent           #f1f1f1 #f1f1f1 #1f1f1f #f1f1f1 #f1f1f1
 
 # Restart/Reload i3
 bindsym $mod+Shift+c reload
@@ -39,8 +39,8 @@ bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5%
 bindsym XF86AudioMute        exec --no-startup-id pactl set-sink-mute   0 toggle
 
 # Brightness controls
-#bindsym XF86MonBrightnessUp   exec xbacklight -inc 20
-#bindsym XF86MonBrightnessDown exec xbacklight -dec 20
+bindsym XF86MonBrightnessUp   exec xbacklight -inc 20
+bindsym XF86MonBrightnessDown exec xbacklight -dec 20
 
 # Media player controls
 bindsym XF86AudioPlay exec playerctl play-pause
@@ -66,10 +66,9 @@ bindsym $mod+r mode "resize"
 # i3bar
 bar {
         position        bottom
-        height          33
+        height          35
         tray_output     none
-        #font            pango:OpenSans Regular 13
-        font            pango:Roboto Regular 13
+        font            pango:OpenSans Regular 13
         status_command  i3blocks
         i3bar_command   i3bar -t
         #mode hide
@@ -77,15 +76,15 @@ bar {
         #modifier Mod1
 
         colors {
-                background #080808f5
-                statusline #ffffff
+                background #1f1f1f
+                statusline #f1f1f1
 
                 #                  Border   Bg      Text
-                focused_workspace  #080808  #080808 #ffffff
-                active_workspace   #080808  #080808 #ffffff
-                inactive_workspace #080808  #080808 #aaaaaa
-                urgent_workspace   #080808  #080808 #aaaaaa
-                binding_mode       #080808  #080808 #ffffff
+                focused_workspace  #1f1f1f  #1f1f1f #ffffff
+                active_workspace   #1f1f1f  #1f1f1f #ffffff
+                inactive_workspace #1f1f1f  #1f1f1f #777777
+                urgent_workspace   #1f1f1f  #1f1f1f #777777
+                binding_mode       #1f1f1f  #1f1f1f #ffffff
         }
 }
 
