@@ -1,4 +1,4 @@
-DEPS = yaourt
+DEPS = yay
 
 PKGS = `cat package.lst`
 
@@ -30,4 +30,4 @@ all: check
 	git config --global credential.helper store
 
 check:
-	yaourt -S --noconfirm --needed $(PKGS)
+	yay -S --noconfirm --needed $(PKGS)

@@ -7,23 +7,23 @@ set $mod Mod1
 
 # Set default font#
 # font pango:opensans regular 11
-font pango: Roboto Regular 12
+font pango:Roboto Regular 12
 
 # Mouse drag + Mod key to move floating windows
 floating_modifier $mod
 
 # Colorize i3
-client.focused          #1f1f1f #1f1f1f #f1f1f1 #1f1f1f #1f1f1f
-client.focused_inactive #f1f1f1 #f1f1f1 #1f1f1f #f1f1f1 #f1f1f1
-client.unfocused        #f1f1f1 #f1f1f1 #1f1f1f #f1f1f1 #f1f1f1
-client.urgent           #f1f1f1 #f1f1f1 #1f1f1f #f1f1f1 #f1f1f1
+client.focused          #0f0f0f #0f0f0f #f1f1f1 #0f0f0f #0f0f0f
+client.focused_inactive #f1f1f1 #f1f1f1 #0f0f0f #f1f1f1 #f1f1f1
+client.unfocused        #f1f1f1 #f1f1f1 #0f0f0f #f1f1f1 #f1f1f1
+client.urgent           #f1f1f1 #f1f1f1 #0f0f0f #f1f1f1 #f1f1f1
 
 # Restart/Reload i3
 bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
 
 # Gap size
-#smart_gaps on
+smart_gaps on
 gaps inner 10
 gaps outer 10
 
@@ -66,7 +66,7 @@ bindsym $mod+r mode "resize"
 # i3bar
 bar {
         position        bottom
-        height          35
+        height          34
         tray_output     none
         font            pango:OpenSans Regular 13
         status_command  i3blocks
@@ -76,15 +76,15 @@ bar {
         #modifier Mod1
 
         colors {
-                background #1f1f1f
+                background #0f0f0f
                 statusline #f1f1f1
 
                 #                  Border   Bg      Text
-                focused_workspace  #1f1f1f  #1f1f1f #ffffff
-                active_workspace   #1f1f1f  #1f1f1f #ffffff
-                inactive_workspace #1f1f1f  #1f1f1f #777777
-                urgent_workspace   #1f1f1f  #1f1f1f #777777
-                binding_mode       #1f1f1f  #1f1f1f #ffffff
+                focused_workspace  #0f0f0f  #0f0f0f #ffffff
+                active_workspace   #0f0f0f  #0f0f0f #ffffff
+                inactive_workspace #0f0f0f  #0f0f0f #777777
+                urgent_workspace   #0f0f0f  #0f0f0f #777777
+                binding_mode       #0f0f0f  #0f0f0f #ffffff
         }
 }
 
