@@ -1,5 +1,3 @@
-DEPS = yay
-
 PKGS = `cat package.lst`
 
 BIN_DIR = "/usr/local/bin"
@@ -20,14 +18,6 @@ all: check
 
 	mkdir -p ~/.config
 	cp -f config/mimeapps.list ~/.config/mimeapps.list
-
-	@read -p "Enter git E-Mail: " gitemail;\
-	git config --global user.email "$$gitemail" --replace-all
-	@read -p "Enter git User: " gituser;\
-	git config --global user.name "$$gituser" --replace-all
-
-	git config --global format.pretty oneline
-	git config --global credential.helper store
 
 check:
 	yay -S --noconfirm --needed $(PKGS)

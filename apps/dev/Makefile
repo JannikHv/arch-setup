@@ -1,5 +1,17 @@
 all:
-	@echo '$$ make [python / scss / phpmyadmin / docker / mysql / atom / vim]'
+	@echo '$$ make [git / python / scss / phpmyadmin / docker / mysql / atom / vim]'
+
+git:
+	yay -S --noconfirm --needed git
+
+	@read -p "Enter git E-Mail: " gitemail;\
+	git config --global user.email "$$gitemail" --replace-all
+
+	@read -p "Enter git User: " gituser;\
+	git config --global user.name "$$gituser" --replace-all
+
+	git config --global format.pretty oneline
+	git config --global credential.helper store
 
 python:
 	yay -S --noconfirm --needed python python-virtualenv
