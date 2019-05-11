@@ -1,5 +1,5 @@
 all:
-	@echo '$$ make [phpmyadmin / docker / mysql / atom]'
+	@echo '$$ make [phpmyadmin / docker / mysql / atom / vim]'
 
 phpmyadmin:
 	yay -S --noconfirm --needed php apache php-apache phpmyadmin
@@ -39,3 +39,22 @@ atom:
 
 	apm install minimap pigments tab-control file-type-icons remote-ftp
 	apm install language-javascript-jsx markdown-preview-plus language-meson language-docker
+
+vim:
+	yay -S --noconfirm --needed vim vim-nerdtree vim-runtime
+
+	sudo rm -rf ~/.vim ~/.vimrc
+	sudo rm -rf /root/.vimrc /root/.vim
+
+	mkdir ~/.vim
+	sudo mkdir /root/.vim
+
+	sudo mkdir -p /usr/share/vim/vim80/syntax
+
+	cp -r config/vim/colors ~/.vim/colors
+	sudo cp -r config/vim/colors /root/.vim/colors
+
+	cp -f config/vim/vimrc  ~/.vimrc
+	sudo cp -f config/vim/vimrc /root/.vimrc
+
+	sudo cp -f config/vim/syntax/c.vim /usr/share/vim/vim80/syntax
