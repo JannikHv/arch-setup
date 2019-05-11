@@ -1,5 +1,11 @@
 all:
-	@echo '$$ make [phpmyadmin / docker / mysql / atom / vim]'
+	@echo '$$ make [python / scss / phpmyadmin / docker / mysql / atom / vim]'
+
+python:
+	yay -S --noconfirm --needed python python-virtualenv
+
+scss:
+	yay -S --noconfirm --needed sassc
 
 phpmyadmin:
 	yay -S --noconfirm --needed php apache php-apache phpmyadmin
