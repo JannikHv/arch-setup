@@ -1,6 +1,6 @@
 DEPS = atom
 
-ATOM_INSTALL = minimap language-javascript-jsx markdown-preview-plus language-meson remote-ftp pigments tab-control file-type-icons pigments
+ATOM_INSTALL = minimap language-javascript-jsx markdown-preview-plus language-meson remote-ftp pigments tab-control file-type-icons pigments language-docker
 
 all:
 	mkdir -p ~/.atom
