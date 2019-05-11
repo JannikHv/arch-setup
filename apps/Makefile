@@ -1,5 +1,25 @@
 all:
-	@echo '$$ make [git / python / scss / phpmyadmin / docker / mysql / atom / vim]'
+	@echo '$$ make <Options>'
+	@echo ''
+	@echo 'Options:'
+	@echo '  - yay'
+	@echo '  - git'
+	@echo '  - python'
+	@echo '  - scss'
+	@echo '  - phpmyadmin'
+	@echo '  - docker'
+	@echo '  - mysql'
+	@echo '  - atom'
+	@echo '  - vim'
+
+yay:
+	sudo pacman -S --noconfirm --needed git
+
+	git clone https://aur.archlinux.org/yay.git
+
+	cd yay && yes | makepkg -sir
+
+	rm -rf yay
 
 git:
 	yay -S --noconfirm --needed git
@@ -24,7 +44,9 @@ phpmyadmin:
 
 	sudo cp -f config/phpmyadmin/httpd.conf /etc/httpd/conf/httpd.conf
 	sudo cp -f config/phpmyadmin/phpmyadmin.conf /etc/httpd/conf/extra/phpmyadmin.conf
+
 	sudo sed -i 's/;extension=mysqli/extension=mysqli/g' /etc/php/php.ini
+
 	sudo systemctl restart httpd
 
 	@echo "Map 127.0.0.1 to pma in /etc/hosts"
@@ -55,8 +77,8 @@ atom:
 	cp -f config/atom/styles.less ~/.atom/
 	cp -f config/atom/config.cson ~/.atom/
 
-	apm install minimap pigments tab-control file-type-icons remote-ftp
-	apm install language-javascript-jsx markdown-preview-plus language-meson language-docker
+	apm install minimap pigments tab-control file-type-icons remote-ftp markdown-preview-plus
+	apm install language-javascript-jsx language-meson language-docker
 
 vim:
 	yay -S --noconfirm --needed vim vim-nerdtree vim-runtime
