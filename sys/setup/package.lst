@@ -3,7 +3,7 @@ xorg-xrandr downgrade xdotool rsync xdg-user-dirs
 xdg-user-dirs-gtk xdg-utils htop
 google-chrome
 ttf-liberation ttf-roboto cantarell-fonts
-ttf-roboto-mono ttf-opensans ttf-font-awesome-4
+ttf-roboto-mono ttf-opensans ttf-font-awesome-4 otf-font-awesome
 curl git wget youtube-dl zip unzip tar gptfdisk pkg-config openssh whois
 aircrack-ng reaver hydra arp-scan dsniff
 gst-plugins-ugly gst-plugins-good gst-libav gvfs gvfs-mtp gvfs-afc gvfs-goa
