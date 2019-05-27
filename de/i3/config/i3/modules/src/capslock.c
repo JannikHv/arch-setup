@@ -18,7 +18,7 @@ int main ()
         return 2;
     }
 
-    char *text = (state & 1) ? "" : "";
+    char *text = (state & 1) ? "  " : "  ";
 
     printf(" %s ", text);
 }
