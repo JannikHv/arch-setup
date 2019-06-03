@@ -12,5 +12,5 @@ int main(int argc, char *argv[])
         "Thu", "Fri", "Sat"
     };
 
-    printf("  %s %02d.%02d.%04d\n", day_name[lt.tm_wday], lt.tm_mday, lt.tm_mon + 1, lt.tm_year + 1900);
+    printf(" %s %02d.%02d.%04d\n", day_name[lt.tm_wday], lt.tm_mday, lt.tm_mon + 1, lt.tm_year + 1900);
 }
