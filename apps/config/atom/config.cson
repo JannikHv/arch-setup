@@ -13,7 +13,7 @@
     followSymlinks: false
     telemetryConsent: "no"
   editor:
-    fontFamily: "Roboto Mono Medium"
+    fontFamily: "Roboto Mono Medium, FontAwesome"
     fontSize: 15
     lineHeight: 1.75
     preferredLineLength: 90
@@ -51,9 +51,9 @@
 ".basic.html.text":
   editor:
     tabLength: 2
-".source.ts":
+".css.source":
   editor:
     tabLength: 2
-".css.source":
+".source.ts":
   editor:
     tabLength: 2
