@@ -32,6 +32,6 @@
 # http://flight-manual.atom.io/using-atom/sections/basic-customization/#configuring-with-cson
 
 'atom-text-editor':
-    'ctrl-shift-down' : 'editor:add-selection-below'
-    'ctrl-shift-up'   : 'editor:add-selection-above'
-    'ctrl-g'          : 'github:toggle-git-tab'
+    'ctrl-shift-down': 'editor:add-selection-below'
+    'ctrl-shift-up': 'editor:add-selection-above'
+    'ctrl-shift-g': 'github:toggle-git-tab'
