@@ -65,7 +65,7 @@ bindsym $mod+r mode "resize"
 
 # i3bar
 bar {
-        position        bottom
+        position        top
         height          34
         tray_output     none
         font            pango:OpenSans Regular 13
@@ -228,5 +228,6 @@ assign [class="Gimp-2.8"]        $workspace10
 
 for_window [class="Nautilus"] floating enable
 for_window [class="Gpick"]    floating enable
+for_window [class="dialog"]   floating enable
 
 assign [window_role="temporary"] $wp_colorpicker

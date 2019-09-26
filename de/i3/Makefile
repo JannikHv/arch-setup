@@ -16,7 +16,8 @@ all: check
 	cp -f      config/bash_profile ~/.bash_profile
 
 	sudo cp -f config/i3/scripts/mkwp.sh /usr/local/bin/mkwp
-	sudo cp -f config/30-touchpad.conf /etc/X11/xorg.conf.d/30-touchpad.conf
+	sudo cp -f config/i3/scripts/run.sh  /usr/local/bin/run
+	sudo cp -f config/30-touchpad.conf   /etc/X11/xorg.conf.d/30-touchpad.conf
 
 	cd ~/.config/i3/modules && make
 
