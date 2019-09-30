@@ -20,5 +20,5 @@ int main ()
 
     char *text = (state & 1) ? "  " : "  ";
 
-    printf(" %s ", text);
+    printf(" %s \n", text);
 }
