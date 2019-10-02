@@ -1,9 +1,9 @@
 ! rofi settings
 rofi.color-enabled:     true
 !                       bg       ?        #00ff00
-rofi.color-window:      #1f1f1f, #ff0000, #ffff00
+rofi.color-window:      #111111, #ff0000, #ffff00
 !                       bg       fg       bg-alt   hl-bg    hl-fg
-rofi.color-normal:      #1f1f1f, #cccccc, #1f1f1f, #161616, #ffff00
+rofi.color-normal:      #111111, #cccccc, #111111, #161616, #ffff00
 rofi.line-padding:      5
 rofi.separator-style:   solid
 rofi.borderwidth:       0
