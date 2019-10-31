@@ -78,7 +78,7 @@ atom:
 	cp -f config/atom/config.cson ~/.atom/
 
 	apm install minimap pigments tab-control file-type-icons remote-ftp markdown-preview-plus
-	apm install language-javascript-jsx language-meson language-docker language-nginx
+	apm install language-javascript-jsx language-meson language-docker language-nginx language-typescript-grammars-only
 
 vim:
 	yay -S --noconfirm --needed vim vim-nerdtree vim-runtime
