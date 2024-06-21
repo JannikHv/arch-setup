@@ -9,6 +9,7 @@
 #include <alsa/pcm.h>
 #include <alsa/control.h>
 #include <alsa/mixer.h>
+#include <string.h>
 
 //     
 
