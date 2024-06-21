@@ -22,7 +22,7 @@ echo ""                                   >> /etc/pacman.conf
 echo "[multilib]"                         >> /etc/pacman.conf
 echo "Include = /etc/pacman.d/mirrorlist" >> /etc/pacman.conf
 
-pacman -Syyu grub
+pacman -Syyu grub git wget
 
 useradd -m -g users -G wheel,storage,power -s /bin/bash jannik
 chfn -f "Jannik Hauptvogel" jannik
@@ -44,5 +44,7 @@ grub-mkconfig -o /boot/grub/grub.cfg
 
 pacman -S --noconfirm xf86-video-intel
 
-# Remove self
 rm -f /mnt/root/arch-chroot.sh
+
+wget https://raw.githubusercontent.com/JannikHv/arch-setup/master/post-install.sh -o /mnt/home/jannik/post-install.sh
+chmod +x /mnt/home/jannik/post-install.sh
