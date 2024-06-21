@@ -7,7 +7,6 @@ ttf-roboto-mono ttf-opensans ttf-font-awesome-4 otf-font-awesome
 curl git wget youtube-dl zip unzip tar gptfdisk pkg-config openssh whois
 aircrack-ng reaver hydra arp-scan dsniff
 gst-plugins-ugly gst-plugins-good gst-libav gvfs gvfs-mtp gvfs-afc gvfs-goa
-gvfs-google gvfs-nfs gvfs-smb libappindicator-gtk2
-libappindicator-gtk3 libappindicator-sharp
+gvfs-google gvfs-nfs gvfs-smb
 xcursor-vanilla-dmz paper-icon-theme arc-gtk-theme
 hplip cups cups-pdf
