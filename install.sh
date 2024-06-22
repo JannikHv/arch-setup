@@ -40,7 +40,7 @@ mkdir /mnt/boot
 mount /dev/sda1 /mnt/boot
 
 ### Base install
-pacstrap /mnt base base-devel linux linux-headers git python3 bash-completion networkmanager
+pacstrap /mnt base base-devel linux linux-headers linux-firmware git python3 bash-completion networkmanager
 
 ### Generate fstab
 genfstab -U -p /mnt >> /mnt/etc/fstab
