@@ -34,6 +34,9 @@ fdisk_cmd+="w\n" # Write and exit
 printf "${fdisk_cmd}" | fdisk -w always -W always ${arg_disk}
 sync
 
+mkfs.ext4 /dev/sda1
+mkfs.xfs /dev/sda2
+
 ### Mount disk partitions
 mount /dev/sda2 /mnt
 mkdir /mnt/boot
