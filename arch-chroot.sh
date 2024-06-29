@@ -29,6 +29,8 @@ chfn -f "Jannik Hauptvogel" jannik
 loadkeys -q -d de
 chpasswd <<< "root:${arg_password}"
 chpasswd <<< "jannik:${arg_password}"
+
+# TODO: Fix
 sed -i -e 's/# %wheel ALL=(ALL) ALL/%wheel ALL=(ALL) ALL/g' /etc/sudoers
 echo "ArchPad" > /etc/hostname
 
