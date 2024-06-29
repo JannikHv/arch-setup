@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Load ${arg_disk}, ${arg_password}
-source <(curl -s https://raw.githubusercontent.com/JannikHv/arch-setup/master/args.sh)
+source <(curl -s https://raw.githubusercontent.com/JannikHv/arch-setup/refactor/args.sh)
 
 rm -f /etc/localtime
 ln -s /usr/share/zoneinfo/Europe/Berlin /etc/localtime
@@ -46,5 +46,5 @@ pacman -S --noconfirm xf86-video-intel
 
 rm -f /mnt/root/arch-chroot.sh
 
-wget https://raw.githubusercontent.com/JannikHv/arch-setup/master/post-install.sh -o /mnt/home/jannik/post-install.sh
+wget https://raw.githubusercontent.com/JannikHv/arch-setup/refactor/post-install.sh -o /mnt/home/jannik/post-install.sh
 chmod +x /mnt/home/jannik/post-install.sh
