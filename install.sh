@@ -8,7 +8,7 @@ source <(curl -s https://raw.githubusercontent.com/JannikHv/arch-setup/refactor/
 loadkeys de
 
 ### Use best mirrors
-pacman -Sy reflector
+pacman -Sy --noconfirm reflector
 reflector --latest 5 --sort rate --save /etc/pacman.d/mirrorlist
 
 ### Clear disk
