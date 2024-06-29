@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Load ${arg_disk}, ${arg_password}
-source <(curl -s https://raw.githubusercontent.com/JannikHv/arch-setup/master/args.sh)
+source <(curl -s https://raw.githubusercontent.com/JannikHv/arch-setup/refactor/args.sh)
 
 ### Load keymap
 # localectl list-keymaps
@@ -46,6 +46,6 @@ pacstrap /mnt base base-devel linux linux-headers linux-firmware git python3 bas
 genfstab -U -p /mnt >> /mnt/etc/fstab
 
 ### TODO
-wget https://raw.githubusercontent.com/JannikHv/arch-setup/master/arch-chroot.sh -o /mnt/root/arch-chroot.sh
+wget https://raw.githubusercontent.com/JannikHv/arch-setup/refactor/arch-chroot.sh -o /mnt/root/arch-chroot.sh
 chmod +x /mnt/root/arch-chroot.sh
 arch-chroot /mnt /mnt/root/arch-chroot.sh -d "${arg_disk}" -p "${arg_password}"
