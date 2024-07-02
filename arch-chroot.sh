@@ -30,8 +30,7 @@ loadkeys -q -d de
 chpasswd <<< "root:${arg_password}"
 chpasswd <<< "jannik:${arg_password}"
 
-# TODO: Fix
-sed -i -e 's/# %wheel ALL=(ALL) ALL/%wheel ALL=(ALL) ALL/g' /etc/sudoers
+sed -i -e 's/# %wheel ALL=(ALL:ALL) ALL/%wheel ALL=(ALL:ALL) ALL/g' /etc/sudoers
 echo "ArchPad" > /etc/hostname
 
 mkinitcpio -p linux
@@ -46,7 +45,6 @@ grub-mkconfig -o /boot/grub/grub.cfg
 
 pacman -S --noconfirm xf86-video-intel
 
-rm -f /mnt/root/arch-chroot.sh
+xdg-user-dirs-update
 
-wget https://raw.githubusercontent.com/JannikHv/arch-setup/refactor/post-install.sh -o /mnt/home/jannik/post-install.sh
-chmod +x /mnt/home/jannik/post-install.sh
+rm -f /root/arch-chroot.sh
