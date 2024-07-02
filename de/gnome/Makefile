@@ -1,6 +1,6 @@
-PGKS = `cat package.lst`
+PACKAGES := `cat package.lst`
 
 all: check
 
 check:
-	yay -S --noconfirm --needed $(PKGS)
+	yay -S --noconfirm --needed $(PACKAGES)

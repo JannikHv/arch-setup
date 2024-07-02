@@ -1,4 +1,4 @@
-PKGS = `cat package.lst`
+PACKAGES := `cat package.lst`
 
 all: check
 	rm -rf ~/.config/i3/
@@ -25,4 +25,4 @@ all: check
 	systemctl --user mask pulseaudio.{service,socket}
 
 check:
-	yay -S --noconfirm --needed $(PKGS)
+	yay -S --noconfirm --needed $(PACKAGES)
